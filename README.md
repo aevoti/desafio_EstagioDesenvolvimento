@@ -10,7 +10,7 @@ Como desafio, é esperado que seja desenvolvida uma página WEB  para a exibiç�
 Não esperamos um sistema completo com persistencia de dados! Embora será um diferencial! <br><br>
 
 Pode ficar a vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado para a confecção da página (Utilização de Angular 2+ será um diferencial).<br>
-Será necessário a confecção de um back-end para a minha página? Não! Mas também será um diferencial! <br>
+Será necessário a confecção de um back-end para a minha página para persistir os dados? Não! Mas também será um diferencial! <br>
 
 ## Requisitos
 - Criar uma conta na FREE na API Weatherstack (https://weatherstack.com/) para a consulta dos dados climáticos(não é necessário pagar nada pelo cadastro!)
