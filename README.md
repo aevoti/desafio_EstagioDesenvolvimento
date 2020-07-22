@@ -30,7 +30,7 @@ A Chave de acesso (YOUR_ACCESS_KEY) é obtida após o cadastro na conta da Weath
 Nenhum framework é exigido para a confecção da página.<br>
 
 - Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
-- Será considerado um diferencial a utilização de de um projeto e back-end para a confecção da página e persistencia de dados em qualquer modelo de persistência.<br>
+- Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
 - Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
 
 Estamos sempre em busca de melhoria, por isso, caso tenha alguma sugestão fique a vontade pra compartilhar conosco! Boa sorte! 💛
