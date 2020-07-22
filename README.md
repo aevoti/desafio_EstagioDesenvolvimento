@@ -27,7 +27,7 @@ http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=New York
 A Chave de acesso (YOUR_ACCESS_KEY) é obtida após o cadastro na conta da Weatherstack
 
 ### Observações importantes:
-Nenhum framework é exigido para a confecção da página.<br>
+Nenhum framework é exigido para a confecção da página!<br>
 
 - Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
 - Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
