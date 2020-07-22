@@ -13,8 +13,22 @@ Pode ficar a vontade para usar as técnicas, ferramentas e frameworks que você 
 Será necessário a confecção de um back-end para a minha página? Não! Mas também será um diferencial! <br>
 
 ## Requisitos
-Criar uma conta na FREE na API Weatherstack (https://weatherstack.com/) para a consulta dos dados climáticos(não é necessário pagar nada pelo cadastro!)
+- Criar uma conta na FREE na API Weatherstack (https://weatherstack.com/) para a consulta dos dados climáticos(não é necessário pagar nada pelo cadastro!)
 
-Utilizar a Documentação da API
+- Explorar a Documentação da API (https://weatherstack.com/documentation)
 
-Elaborar uma página 
+- Elaborar uma página para consultar e exibir as informações da requisição da API na página
+
+-  Adicionar um imput para permitir a busca por diferentes regiões.
+
+Exemplo: uma chamada da api para New York 
+http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=New York
+
+A Chave de acesso (YOUR_ACCESS_KEY) é obtida após o cadastro na conta da Weatherstack
+
+### Observações importantes:
+Nenhum framework é exigido para a confecção da página.<br>
+
+- Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
+- Será considerado um diferencial a utilização de de um projeto e back-end para a confecção da página e persistencia de dados em qualquer modelo de persistência.<br>
+- Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
