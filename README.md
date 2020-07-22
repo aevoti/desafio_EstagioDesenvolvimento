@@ -19,7 +19,7 @@ Será necessário a confecção de um back-end para a minha página para persist
 
 - Elaborar uma página para consultar e exibir as informações da requisição da API na página
 
--  Adicionar um input para permitir a busca por diferentes regiões.
+- Adicionar um input na página para permitir a busca por diferentes regiões.<br>
 
 Exemplo: uma chamada da api para New York 
 http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=New York
