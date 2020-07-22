@@ -1,4 +1,4 @@
-# Desafio para Estagipario em Desenvolvimento da AEVO
+# Desafio para Estagiário em Desenvolvimento da AEVO
 
 Olá candidato,
 
@@ -32,3 +32,5 @@ Nenhum framework é exigido para a confecção da página.<br>
 - Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
 - Será considerado um diferencial a utilização de de um projeto e back-end para a confecção da página e persistencia de dados em qualquer modelo de persistência.<br>
 - Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
+
+Estamos sempre em busca de melhoria, por isso, caso tenha alguma sugestão fique a vontade pra compartilhar conosco! Boa sorte! 💛
