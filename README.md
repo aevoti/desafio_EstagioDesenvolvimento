@@ -38,7 +38,7 @@ Nenhum framework é exigido para a confecção da página!<br>
 Você poderá:
 - efetuar um pull request da sua implementação diretamente no Github até a data limite de 30/07/2020 <br>
 ou  
-- encaminhar por e-mail até a data limite de 30/07/2020 um arquivo .zip ou link com o código fonte.
+- encaminhar por e-mail um arquivo .zip ou link com o código fonte até a data limite de 30/07/2020. <br>
 
 Estamos sempre em busca de melhoria, por isso, caso tenha alguma sugestão fique à vontade pra compartilhar conosco! Boa sorte! 💛
 
