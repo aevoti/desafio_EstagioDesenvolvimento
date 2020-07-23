@@ -2,15 +2,15 @@
 
 Olá candidato,
 
-Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma jornada seletiva de altíssimo nível, mas você brilhou em cada etapa e não temos dúvidas de que fará isso mais uma vez! <br>
-Abaixo você encontrará todos as informações necessárias para iniciar o seu desafio final.
+Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma jornada seletiva de altíssimo nível, mas você brilhou em cada etapa e não temos dúvidas de que fará isso mais uma vez!<br>
+Abaixo, você encontrará todos as informações necessárias para iniciar o seu desafio final.
 
 ## Visão Geral - O que é esperado?
 Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em desenvolvimento WEB! <br>
 Como desafio, é esperado que você desenvolva uma página WEB  para a exibição de dados climáticos de uma determinada região, utilizando uma API aberta para a consulta das informações. <br>
 Não esperamos um sistema completo com persistencia de dados! Porém, caso você o faça, será um diferencial!<br><br>
 
-Pode ficar a vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado para a confecção da página (Utilização de Angular 2+ será um diferencial).<br>
+Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado para a confecção da página (Utilização de Angular 2+ será um diferencial)<br>
 Será necessário a confecção de um back-end para a minha página, para persistir os dados? Não! Mas também será um diferencial! <br>
 
 ## Requisitos
