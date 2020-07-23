@@ -14,7 +14,7 @@ Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você
 Será necessário a confecção de um back-end para a minha página, para persistir os dados? Não! Mas também será um diferencial! <br>
 
 ## Requisitos
-- Criar uma conta na FREE na API Weatherstack (https://weatherstack.com/) para a consulta dos dados climáticos(não é necessário pagar nada pelo cadastro!)
+- Criar uma conta FREE na API Weatherstack (https://weatherstack.com/) para a consulta dos dados climáticos(não é necessário pagar nada pelo cadastro!)
 
 - Explorar a Documentação da API (https://weatherstack.com/documentation)
 
