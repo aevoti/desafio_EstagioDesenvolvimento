@@ -34,8 +34,11 @@ Nenhum framework é exigido para a confecção da página!<br>
 - Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
 - Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
 
+### Como serei avaliado?
+Você poderá:
+- efetuar um pull request da sua implementação diretamente no Github até a data limite de 30/07/2020 <br>
+ou  
+- encaminhar por e-mail até a data limite de 30/07/2020 um arquivo .zip ou link com o código fonte.
+
 Estamos sempre em busca de melhoria, por isso, caso tenha alguma sugestão fique à vontade pra compartilhar conosco! Boa sorte! 💛
 
-### Como serei avaliado?
-- Você poderá efetuar um pull request da sua implementação diretamente no Github
-- Você poderá encaminhar por e-mail até a data limite de 30/07/2020 um arquivo .zip ou link com o código fonte.
