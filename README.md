@@ -40,5 +40,7 @@ Você poderá:
 ou  
 - encaminhar para o e-mail marcelo.cogo@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 30/07/2020. <br>
 
+Qualquer problema ou dificuldade com o repositório ou a API Weatherstack, você pode entrar em contato conosco pelos e-mails, marcelo.cogo@aevo.com.br ou rh@aevo.com.br para que possamos sanar todas as dúvidas!
+
 Estamos sempre em busca de melhoria, por isso, caso tenha alguma sugestão fique à vontade pra compartilhar conosco! Boa sorte! 💛
 
