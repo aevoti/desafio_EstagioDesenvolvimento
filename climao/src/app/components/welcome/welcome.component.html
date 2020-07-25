@@ -1,0 +1,8 @@
+<div>
+  <button (click)=getData()>GET DATA</button>
+  <div class="card">
+    <h2>{{ cityWeather.location.name }} - {{ cityWeather.location.region }}, {{ cityWeather.location.country }}</h2>
+    <p>{{ cityWeather.current.temperature}}°C at {{ cityWeather.current.observation_time }}</p>
+  </div>
+  <!-- {{ response | json }} -->
+</div>
