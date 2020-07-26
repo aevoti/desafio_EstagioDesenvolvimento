@@ -3,7 +3,7 @@
 </div>
 <!-- <app-welcome></app-welcome> -->
 <div class="cities">
-  <div class="city-weather" *ngFor="let city of [0, 1, 2, 3, 4]">
-    <app-city-weather></app-city-weather>
+  <div class="city-weather" *ngFor="let city of cities">
+    <app-city-weather [cityWeather]="city" ></app-city-weather>
   </div>
 </div>

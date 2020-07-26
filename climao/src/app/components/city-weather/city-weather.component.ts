@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
 
 @Component({
   selector: 'app-city-weather',
@@ -12,7 +13,17 @@ export class CityWeatherComponent implements OnInit {
   windIcon = '../../../assets/icons/wind.svg';
   arrowIcon = '../../../assets/icons/arrow.svg';
 
+  @Input() cityWeather: ICurrentWeather;
+
   ngOnInit(): void {
   }
+
+  // getData(): void{
+  //   this.weatherService.getCurrentWeather('Beijing').subscribe(
+  //     data => this.cityWeather = data,
+  //     err => console.error(err),
+  //     () => console.log(this.cityWeather)
+  //   );
+  // }
 
 }

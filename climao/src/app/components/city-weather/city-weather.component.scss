@@ -1,7 +1,9 @@
 @import '../../../styles/theme';
 
 .simple-card {
-  width: 275px;
+  min-width: 275px;
+  width: 95%;
+  max-width: 350px;
   padding: 15px 20px;
   background-color: $color-white;
 
@@ -46,6 +48,11 @@
       grid-template-columns: repeat(4, auto);
       align-items: center;
       gap: 0.5rem;
+      .wind-dir {
+        color: $color-gray-900;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+      }
     }
   }
 }

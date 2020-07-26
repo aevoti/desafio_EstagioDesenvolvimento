@@ -1,15 +1,16 @@
  <div class="simple-card">
    <div class="info-left">
-     <img class="weather-icon" src="https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png" alt="Partly Cloud icon" width="48" height="48">
-     <p class="weather-description" >Partly Cloud</p>
+     <img class="weather-icon" src={{cityWeather.current.weather_icons}} alt="{{cityWeather.current.weather_descriptions}} icon" width="48" height="48">
+     <p class="weather-description" >{{cityWeather.current.weather_descriptions}}</p>
    </div>
    <div class="info-right">
-     <p class="location-data">Vitória<span class="temperature-data">23°C</span></p>
+     <!-- <p class="location-data">{{cityWeather.location.name | slice:0:12}}<span class="temperature-data">{{cityWeather.current.temperature}}°C</span></p> -->
+     <p class="location-data">{{ cityWeather.location.name | truncate:[12, '...'] }}<span class="temperature-data">{{cityWeather.current.temperature}}°C</span></p>
      <div class="wind-data">
        <img src={{windIcon}} alt="wind icon">
-       <p class="wind-speed">7 km/h</p>
+       <p class="wind-speed">{{cityWeather.current.wind_speed}} km/h</p>
        <img src={{arrowIcon}} alt="compass icon">
-       <p class="wind-dir">NE</p>
+       <p class="wind-dir">{{cityWeather.current.wind_dir}}</p>
      </div>
    </div>
  </div>

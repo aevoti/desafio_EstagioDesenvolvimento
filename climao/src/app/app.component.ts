@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import initialCities from'./models/initialCities.json';
+import { ICurrentWeather } from './models/ICurrentWeather';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  cities: ICurrentWeather[] = initialCities;
 
 }
