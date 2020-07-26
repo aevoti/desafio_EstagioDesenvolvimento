@@ -1,0 +1,9 @@
+<div class="logo">
+  <app-brand></app-brand>
+</div>
+<!-- <app-welcome></app-welcome> -->
+<div class="cities">
+  <div class="city-weather" *ngFor="let city of cities">
+    <app-city-weather [cityWeather]="city" ></app-city-weather>
+  </div>
+</div>

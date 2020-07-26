@@ -1,0 +1,58 @@
+@import '../../../styles/theme';
+
+.simple-card {
+  min-width: 275px;
+  width: 95%;
+  max-width: 350px;
+  padding: 15px 20px;
+  background-color: $color-white;
+
+  /* shadow */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+  .info-left {
+    display: flex;
+    flex-direction: column;
+    .weather-icon {
+      border-radius: 100px;
+    }
+    .weather-description {
+      margin-top: 0.5rem;
+
+      /*font*/
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+  .info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .location-data {
+      align-self: flex-end;
+      color: $color-gray-900;
+      span {
+        margin-left: 0.5rem;
+        font-size: 24px;
+      }
+    }
+    .wind-data {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      align-items: center;
+      gap: 0.5rem;
+      .wind-dir {
+        color: $color-gray-900;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+}

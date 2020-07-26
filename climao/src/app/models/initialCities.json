@@ -1,0 +1,166 @@
+[
+  {
+    "request": {
+      "type": "City",
+      "query": "Vitória, Brasilien",
+      "language": "en",
+      "unit": "m"
+    },
+    "location": {
+      "name": "Vitória",
+      "country": "Brasilien",
+      "region": "Espirito Santo",
+      "lat": "-20.317",
+      "lon": "-40.350",
+      "timezone_id": "America\/Sao_Paulo",
+      "localtime": "2020-07-24 18:35",
+      "localtime_epoch": 1595615700,
+      "utc_offset": "-3.0"
+    },
+    "current": {
+      "observation_time": "09:35 PM",
+      "temperature": 23,
+      "weather_code": 116,
+      "weather_icons": [
+        "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
+      ],
+      "weather_descriptions": [
+        "Partly cloudy"
+      ],
+      "wind_speed": 7,
+      "wind_degree": 50,
+      "wind_dir": "NE",
+      "pressure": 1021,
+      "precip": 0.1,
+      "humidity": 73,
+      "cloudcover": 75,
+      "feelslike": 25,
+      "uv_index": 1,
+      "visibility": 10,
+      "is_day": "no"
+    }
+  },
+  {
+    "request": {
+      "type": "City",
+      "query": "Cachoeiro De Itapemirim, Brazil",
+      "language": "en",
+      "unit": "m"
+    },
+    "location": {
+      "name": "Cachoeiro De Itapemirim",
+      "country": "Brazil",
+      "region": "Espirito Santo",
+      "lat": "-20.850",
+      "lon": "-41.100",
+      "timezone_id": "America\/Sao_Paulo",
+      "localtime": "2020-07-24 19:35",
+      "localtime_epoch": 1595619300,
+      "utc_offset": "-3.0"
+    },
+    "current": {
+      "observation_time": "10:35 PM",
+      "temperature": 23,
+      "weather_code": 113,
+      "weather_icons": [
+        "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0008_clear_sky_night.png"
+      ],
+      "weather_descriptions": [
+        "Clear"
+      ],
+      "wind_speed": 19,
+      "wind_degree": 90,
+      "wind_dir": "E",
+      "pressure": 1020,
+      "precip": 0.1,
+      "humidity": 78,
+      "cloudcover": 0,
+      "feelslike": 25,
+      "uv_index": 1,
+      "visibility": 10,
+      "is_day": "no"
+    }
+  },
+  {
+    "request": {
+      "type": "City",
+      "query": "Api-Api Laut, أندونيسيا",
+      "language": "en",
+      "unit": "m"
+    },
+    "location": {
+      "name": "Api-Api Laut",
+      "country": "أندونيسيا",
+      "region": "Riau",
+      "lat": "1.513",
+      "lon": "101.935",
+      "timezone_id": "Asia\/Jakarta",
+      "localtime": "2020-07-25 04:34",
+      "localtime_epoch": 1595651640,
+      "utc_offset": "7.0"
+    },
+    "current": {
+      "observation_time": "09:34 PM",
+      "temperature": 24,
+      "weather_code": 116,
+      "weather_icons": [
+        "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
+      ],
+      "weather_descriptions": [
+        "Partly cloudy"
+      ],
+      "wind_speed": 0,
+      "wind_degree": 181,
+      "wind_dir": "S",
+      "pressure": 1009,
+      "precip": 1.4,
+      "humidity": 94,
+      "cloudcover": 25,
+      "feelslike": 27,
+      "uv_index": 1,
+      "visibility": 10,
+      "is_day": "no"
+    }
+  },
+  {
+    "request": {
+      "type": "City",
+      "query": "Camburi, Angola",
+      "language": "en",
+      "unit": "m"
+    },
+    "location": {
+      "name": "Camburi",
+      "country": "Angola",
+      "region": "Malanje",
+      "lat": "-9.350",
+      "lon": "16.617",
+      "timezone_id": "Africa\/Luanda",
+      "localtime": "2020-07-24 22:34",
+      "localtime_epoch": 1595630040,
+      "utc_offset": "1.0"
+    },
+    "current": {
+      "observation_time": "09:34 PM",
+      "temperature": 23,
+      "weather_code": 113,
+      "weather_icons": [
+        "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0008_clear_sky_night.png"
+      ],
+      "weather_descriptions": [
+        "Clear"
+      ],
+      "wind_speed": 5,
+      "wind_degree": 83,
+      "wind_dir": "E",
+      "pressure": 1014,
+      "precip": 0,
+      "humidity": 25,
+      "cloudcover": 0,
+      "feelslike": 25,
+      "uv_index": 1,
+      "visibility": 10,
+      "is_day": "no"
+    }
+  }
+]
