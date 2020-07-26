@@ -4,16 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
 import { CityWeatherComponent } from './components/city-weather/city-weather.component';
 import { BrandComponent } from './components/brand/brand.component';
+import { TruncatePipe } from './utils/truncate.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
     CityWeatherComponent,
-    BrandComponent
+    BrandComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
