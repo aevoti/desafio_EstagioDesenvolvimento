@@ -1,5 +1,5 @@
 export interface ICurrentWeather {
-  request: {
+  request?: {
     type: string,
     query: string,
     language: string,
@@ -20,8 +20,8 @@ export interface ICurrentWeather {
     observation_time: string,
     temperature: number,
     weather_code: number,
-    weather_icons: [string],
-    weather_descriptions: [string],
+    weather_icons: string[],
+    weather_descriptions: string[],
     wind_speed: number,
     wind_degree: number,
     wind_dir: string,
