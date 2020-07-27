@@ -8,6 +8,7 @@ import { CityWeatherComponent } from './components/city-weather/city-weather.com
 import { BrandComponent } from './components/brand/brand.component';
 import { TruncatePipe } from './utils/truncate.pipe';
 import { DesktopPageComponent } from './pages/desktop-page/desktop-page.component';
+import { MobilePageComponent } from './pages/mobile-page/mobile-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DesktopPageComponent } from './pages/desktop-page/desktop-page.componen
     CityWeatherComponent,
     BrandComponent,
     TruncatePipe,
-    DesktopPageComponent
+    DesktopPageComponent,
+    MobilePageComponent
   ],
   imports: [
     BrowserModule,
