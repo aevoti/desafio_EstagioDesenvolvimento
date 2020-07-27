@@ -1,11 +1,11 @@
 export interface ICurrentWeather {
-  request?: {
+  readonly request?: {
     type: string,
     query: string,
     language: string,
     unit: string,
   };
-  location: {
+  readonly location: {
     name: string,
     country: string,
     region: string,
@@ -16,7 +16,7 @@ export interface ICurrentWeather {
     localtime_epoch: number,
     utc_offset: string
   };
-  current: {
+  readonly current: {
     observation_time: string,
     temperature: number,
     weather_code: number,
