@@ -162,5 +162,46 @@
       "visibility": 10,
       "is_day": "no"
     }
+  },
+  {
+    "request": {
+      "type": "City",
+      "query": "Afogados Da Ingazeira, Brazil",
+      "language": "en",
+      "unit": "m"
+    },
+    "location": {
+      "name": "Afogados Da Ingazeira",
+      "country": "Brazil",
+      "region": "Pernambuco",
+      "lat": "-7.750",
+      "lon": "-37.650",
+      "timezone_id": "America\/Recife",
+      "localtime": "2020-07-27 16:22",
+      "localtime_epoch": 1595866920,
+      "utc_offset": "-3.0"
+    },
+    "current": {
+      "observation_time": "07:22 PM",
+      "temperature": 25,
+      "weather_code": 116,
+      "weather_icons": [
+        "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"
+      ],
+      "weather_descriptions": [
+        "Partly cloudy"
+      ],
+      "wind_speed": 17,
+      "wind_degree": 106,
+      "wind_dir": "ESE",
+      "pressure": 1015,
+      "precip": 0,
+      "humidity": 50,
+      "cloudcover": 20,
+      "feelslike": 26,
+      "uv_index": 6,
+      "visibility": 10,
+      "is_day": "yes"
+    }
   }
 ]
