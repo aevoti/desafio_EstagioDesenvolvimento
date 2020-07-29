@@ -10,6 +10,7 @@ import { TruncatePipe } from './utils/truncate.pipe';
 import { DesktopPageComponent } from './pages/desktop-page/desktop-page.component';
 import { MobilePageComponent } from './pages/mobile-page/mobile-page.component';
 import { CityWeatherDetailComponent } from './components/city-weather-detail/city-weather-detail.component';
+import { CityWeatherListComponent } from './components/city-weather-list/city-weather-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CityWeatherDetailComponent } from './components/city-weather-detail/cit
     BrandComponent,
     TruncatePipe,
     DesktopPageComponent,
-    MobilePageComponent
+    MobilePageComponent,
+    CityWeatherListComponent
   ],
   imports: [
     BrowserModule,

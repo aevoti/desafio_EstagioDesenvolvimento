@@ -18,7 +18,11 @@ export class CityWeatherComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // getData(): void{
+  printCityId(): void{
+    console.log(this.cityWeather.id);
+  }
+
+  // getCities(): void{
   //   this.weatherService.getCurrentWeather('Beijing').subscribe(
   //     data => this.cityWeather = data,
   //     err => console.error(err),

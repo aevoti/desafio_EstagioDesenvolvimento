@@ -1,4 +1,4 @@
- <div class="simple-card">
+ <div class="simple-card" [routerLink]="['/cities/', cityWeather.id]" (click)="printCityId()">
    <div class="info-left">
      <img class="weather-icon" src={{cityWeather.current.weather_icons}} alt="{{cityWeather.current.weather_descriptions}} icon" width="48" height="48">
      <p class="weather-description" >{{cityWeather.current.weather_descriptions}}</p>
@@ -11,7 +11,6 @@
    <div class="wind-data">
      <img src={{windIcon}} alt="wind icon">
      <p class="wind-speed">{{cityWeather.current.wind_speed}} km/h</p>
-     <!-- <img src={{arrowIcon}} alt="compass icon"> -->
-     <p class="wind-dir">{{cityWeather.current.wind_dir}}</p>
+     <p *ngIf="cityWeather.current.wind_speed" class="wind-dir">{{cityWeather.current.wind_dir}}</p>
    </div>
  </div>

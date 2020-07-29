@@ -1,20 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
-import initialCities from '../../models/initialCities.json';
-import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-page',
   templateUrl: './mobile-page.component.html',
   styleUrls: ['./mobile-page.component.scss']
 })
-export class MobilePageComponent implements OnInit {
+export class MobilePageComponent {
 
-  cities: any[] = initialCities;
+  constructor(private route: ActivatedRoute) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  hasCityId(): boolean{
+    return this.route.firstChild.snapshot.paramMap.has('id');
   }
 
 }

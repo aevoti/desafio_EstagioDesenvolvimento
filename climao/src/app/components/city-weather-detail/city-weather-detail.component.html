@@ -7,15 +7,15 @@
     <div class="location-info">
       <div class="left-info">
         <h2 class="location-name">
-          {{city.location.name}}
+          {{cityDetails.location.name}}
         </h2>
         <p class="weather-description">
-          {{city.current.weather_descriptions}}
+          {{cityDetails.current.weather_descriptions}}
         </p>
       </div>
       <div class="right-info">
         <p class="current-temperature">
-          {{city.current.temperature}} °C
+          {{cityDetails.current.temperature}} °C
         </p>
       </div>
     </div>
@@ -25,23 +25,23 @@
     <ul class="current-info">
       <li class="time-info">
         <h3><span><img src={{clockIcon}} alt="clock icon"></span>Local Time</h3>
-        <p>{{ city.location.localtime_epoch | date:'hh:mm':'-0300' }}</p>
+        <p>{{ cityDetails.location.localtime_epoch | date:'hh:mm':'-0300' }}</p>
       </li>
       <li class="rain-info">
         <h3><span><img src={{waterIcon}} alt="wind icon"></span>Humidity</h3>
-        <p>{{city.current.humidity / 100 | percent}}</p>
+        <p>{{cityDetails.current.humidity / 100 | percent}}</p>
       </li>
       <li class="wind-info">
         <h3><span><img src={{windIcon}} alt="wind icon"></span>Wind</h3>
         <p>
-          <span class="wind-speed">{{city.current.wind_speed}} km/h </span>
-          <span *ngIf="city.current.wind_speed" class="wind-dir">{{city.current.wind_dir}}</span>
+          <span class="wind-speed">{{cityDetails.current.wind_speed}} km/h </span>
+          <span *ngIf="cityDetails.current.wind_speed" class="wind-dir">{{cityDetails.current.wind_dir}}</span>
         </p>
       </li>
     </ul>
   </div>
   <div class="card-footer">
     <span>Request made at</span>
-    <span>{{city.location.localtime}}</span>
+    <span>{{cityDetails.location.localtime}}</span>
   </div>
 </div>

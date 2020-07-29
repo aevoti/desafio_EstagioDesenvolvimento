@@ -12,7 +12,7 @@ export class DesktopPageComponent implements OnInit {
 
   @ViewChild('search') searchElement: ElementRef;
 
-  cities: ICurrentWeather[] = initialCities;
+  cities: ICurrentWeather[] = JSON.parse(localStorage.getItem('cities'));
 
   addIcon: string = '../../../assets/icons/add-24px.svg';
   logo: string = '../../../assets/icons/logo.svg';

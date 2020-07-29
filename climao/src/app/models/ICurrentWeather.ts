@@ -1,4 +1,5 @@
 export interface ICurrentWeather {
+  id?: number;
   readonly request?: {
     type: string,
     query: string,
