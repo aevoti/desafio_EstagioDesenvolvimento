@@ -10,7 +10,7 @@ import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
 })
 export class MobilePageComponent implements OnInit {
 
-  cities: ICurrentWeather[] = initialCities;
+  cities: any[] = initialCities;
 
   constructor() { }
 
