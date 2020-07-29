@@ -1,34 +1,29 @@
 <div class="container">
   <nav class="wrap">
     <div class="logo">
-      <img src={{logo}} alt="climão logo">
+      <img src="assets/icons/logo.svg" alt="climão logo">
     </div>
     <label for="inputCity">
       Search for a city weather:
-      <input type="search" name="inputCity" id="inputCity">
+      <input #search type="search" name="inputCity" id="inputCity">
     </label>
   </nav>
 </div>
 
-<!-- <app-welcome></app-welcome> -->
 <div class="container">
   <div class="cities wrap">
     <div class="empty-card card">
       <div class="card-content">
-        <h2>Search for a city...</h2>
-        <div class="map" ng>
-          <img src={{addIcon}} alt="add icon" height="40" width="40">
+        <h2>Search for a city <br/> to populate this card...</h2>
+        <div class="addButton map" (click)="focusSearchBar()">
+          <img src="assets/icons/add-24px.svg" alt="add icon" height="40" width="40">
         </div>
       </div>
     </div>
-    <!-- <div class="city-weather" *ngFor="let city of cities">
+    <div class="city-weather" *ngFor="let city of cities">
       <div class="city">
-        <div class="full-card card">
-          <div class="header-bar"></div>
-          <div class="card-content"></div>
-          <div class="footer-bar"></div>
-        </div>
+        <app-city-weather-detail [city]=city></app-city-weather-detail>
       </div>
-    </div> -->
+    </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
-// import initialCities from '../../models/initialCities.json';
+import initialCities from '../../models/initialCities.json';
 import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
 
 @Component({
@@ -10,12 +10,18 @@ import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
 })
 export class DesktopPageComponent implements OnInit {
 
-  // cities: ICurrentWeather[] = initialCities;
+  @ViewChild('search') searchElement: ElementRef;
+
+  cities: ICurrentWeather[] = initialCities;
 
   addIcon: string = '../../../assets/icons/add-24px.svg';
   logo: string = '../../../assets/icons/logo.svg';
 
   constructor() { }
+
+  focusSearchBar() {
+    this.searchElement.nativeElement.focus();
+  }
 
   ngOnInit(): void {
   }

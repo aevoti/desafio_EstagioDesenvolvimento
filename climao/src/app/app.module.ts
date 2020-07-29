@@ -9,11 +9,13 @@ import { BrandComponent } from './components/brand/brand.component';
 import { TruncatePipe } from './utils/truncate.pipe';
 import { DesktopPageComponent } from './pages/desktop-page/desktop-page.component';
 import { MobilePageComponent } from './pages/mobile-page/mobile-page.component';
+import { CityWeatherDetailComponent } from './components/city-weather-detail/city-weather-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CityWeatherComponent,
+    CityWeatherDetailComponent,
     BrandComponent,
     TruncatePipe,
     DesktopPageComponent,
