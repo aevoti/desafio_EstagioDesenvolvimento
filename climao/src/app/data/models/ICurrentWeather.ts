@@ -32,6 +32,7 @@ export interface ICurrentWeather {
     cloudcover: number,
     feelslike: number,
     uv_index: number,
-    visibility: number
+    visibility: number,
+    is_day: string
   };
 }
