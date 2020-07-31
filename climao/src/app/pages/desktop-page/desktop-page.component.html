@@ -3,10 +3,11 @@
     <div class="logo">
       <img src="assets/icons/logo.svg" alt="climão logo">
     </div>
-    <label for="inputCity">
-      Search for a city weather:
-      <input #search type="search" name="inputCity" id="inputCity">
-    </label>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <label for="inputCity">Search for a city weather:</label>
+      <input #search type="search" name="inputCity" id="inputCity" ngModel>
+      <button type="submit">ADD CITY</button>
+    </form>
   </nav>
 </div>
 
@@ -15,7 +16,7 @@
     <div class="empty-card card">
       <div class="card-content">
         <h2>Search for a city <br/> to populate this card...</h2>
-        <div class="addButton map" (click)="focusSearchBar()">
+        <div class="addButton" (click)="focusSearchBar()">
           <img src="assets/icons/add-24px.svg" alt="add icon" height="40" width="40">
         </div>
       </div>

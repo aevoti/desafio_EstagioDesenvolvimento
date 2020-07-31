@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
 import { ActivatedRoute } from '@angular/router';
+import { ICurrentWeather } from '../../../app/data/models/ICurrentWeather';
+import { CityService } from 'src/app/services/city.service';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-city-weather-detail',
@@ -9,26 +11,29 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CityWeatherDetailComponent implements OnInit {
 
-  @Input() city: ICurrentWeather ;
+  @Input() city: ICurrentWeather;
+
   cityDetails: ICurrentWeather;
+  errorMessage: string;
 
-  pinIcon: string = '../../../assets/icons/push_pin-24px.svg';
-  deleteIcon: string = '../../../assets/icons/delete-24px.svg';
-  addIcon: string = '../../../assets/icons/add-24px.svg';
-  clockIcon: string = '../../../assets/icons/access_time-24px.svg';
-  windIcon: string = '../../../assets/icons/wind.svg';
-  waterIcon: string = '../../../assets/icons/drop.svg';
-
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private cityService: CityService) { }
 
   ngOnInit() {
-    if (this.city) {
+    const id = +this.route.snapshot.paramMap.get('id');
+    if (id === 0) {
       this.cityDetails = this.city;
     } else {
-      const cityId = this.route.snapshot.paramMap.get('id');
-      const cities = JSON.parse(localStorage.getItem('cities'));
-      this.cityDetails = cities[cityId];
+      this._getCity(id);
     }
+    console.log(this.cityDetails);
+  }
+
+  private _getCity(id: number): void {
+    this.cityService.getCity(id)
+      .subscribe({
+        next: city => this.cityDetails = city,
+        error: err => this.errorMessage = err
+      })
   }
 
 }

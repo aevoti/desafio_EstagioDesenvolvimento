@@ -10,6 +10,11 @@
   align-items: center;
   text-align: center;
   color: $color-gray-900;
+  hr {
+    width: 80%;
+    border: 0.5px solid $color-gray-700;
+    border-radius: 1px;
+  }
   .card-content {
     width: 100%;
     padding: 20px;
@@ -18,13 +23,6 @@
     align-items: center;
     h2 {
       font-weight: 400;
-    }
-    .map {
-      width: 160px;
-      height: 160px;
-      border-radius: 200px;
-      display: grid;
-      place-items: center;
     }
   }
 }
@@ -84,14 +82,6 @@
         }
       }
     }
-    .map {
-      background-color: $color-gray-300;
-      cursor: pointer;
-      transition: background-color 200ms ease;
-      &:hover {
-        background-color: $color-gray-700;
-      }
-    }
     .current-info {
       width: 100%;
       li {
@@ -131,5 +121,23 @@
       size: 0.5rem;
       weight: 700;
     }
+  }
+}
+
+.map-frame {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 200px;
+  display: grid;
+  place-items: center;
+  background-color: $color-gray-300;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+  &:hover {
+    background-color: $color-gray-700;
+  }
+  #map {
+    height: 100%;
   }
 }

@@ -4,12 +4,13 @@
       <img src="assets/icons/keyboard_backspace-24px.svg" alt="back page icon">
     </a>
     <div class="logo">
-      <img src="assets/icons/logo.svg" alt="climão logo">
+      <img src="assets/icons/logo.svg" alt="Climão logo">
     </div>
-    <label for="inputCity" *ngIf="!hasCityId()">
-      Search for a city weather:
-      <input #search type="search" name="inputCity" id="inputCity">
-    </label>
+    <form *ngIf="!hasCityId()" #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <label for="inputCity">Search for a city weather:</label>
+      <input type="search" name="inputCity" id="inputCity" ngModel>
+      <button type="submit">ADD CITY</button>
+    </form>
   </nav>
 </div>
 

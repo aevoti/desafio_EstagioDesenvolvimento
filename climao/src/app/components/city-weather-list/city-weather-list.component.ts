@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
+import { Component, OnInit, DoCheck, OnChanges } from '@angular/core';
+import { ICurrentWeather } from 'src/app/data/models/ICurrentWeather';
+import { CityService } from 'src/app/services/city.service';
+import { CurrentWeatherService } from 'src/app/services/current-weather.service';
 
 @Component({
   selector: 'app-city-weather-list',
@@ -8,11 +10,26 @@ import { ICurrentWeather } from 'src/app/models/ICurrentWeather';
 })
 export class CityWeatherListComponent implements OnInit {
 
-  cities: ICurrentWeather[] = JSON.parse(localStorage.getItem('cities'));
+  cities: ICurrentWeather[];
+  hasNewCity: boolean = false;
 
-  constructor() { }
+  constructor(private citiesService: CityService, private weatherService: CurrentWeatherService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getCities();
+    this.citiesService.citiesLengthSource$.subscribe({
+      next: (data) => {
+        if (data !== this.cities.length){
+          this.getCities()
+        }
+      }
+    })
   }
 
+  getCities() {
+    this.citiesService.getCities().subscribe({
+      next: cities => this.cities = cities,
+      error: err => console.error(err)
+    });
+  }
 }

@@ -14,8 +14,7 @@
     "icon city-name"
     "icon wind";
   gap: 0.5rem;
-  font-family: 'Lobster', cursive;
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 
   .info-left {
     grid-area: icon;
@@ -31,9 +30,8 @@
       margin-top: 0.5rem;
 
       /*font*/
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: normal;
+      font-style: italic;
+
     }
   }
 
@@ -43,11 +41,17 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+
+    /* font */
+    font-family: 'Lobster', cursive;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: normal;
     color: $color-gray-900;
     .city-name {
       text-align: right;
       max-width: 150px;
-      font-size: 1em;
+      /*font*/
     }
     .temperature-data {
       margin-left: 0.5rem;
@@ -62,6 +66,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-weight: 700;
 
     >*+* {
       margin-left: 0.5rem;
@@ -69,8 +74,6 @@
 
     .wind-dir {
       color: $color-gray-900;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
     }
   }
 }
