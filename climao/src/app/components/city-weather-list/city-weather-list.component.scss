@@ -1,0 +1,14 @@
+.cities {
+  min-width: 275px;
+  width: 90%;
+  margin: 0 auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  .city-weather {
+    min-width: 275px;
+    width: 95%;
+  }
+}
