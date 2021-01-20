@@ -36,7 +36,7 @@ Nenhum framework é exigido para a confecção da página!<br>
 
 ### Como serei avaliado?
 Você poderá:
-- efetuar um pull request da sua implementação diretamente no Github até a data limite de 30/07/2020 <br>
+- efetuar um pull request da sua implementação diretamente no Github até a data limite de 31/01/2020 <br>
 ou  
 - encaminhar para o e-mail marcelo.cogo@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 30/07/2020. <br>
 
