@@ -38,7 +38,7 @@ Nenhum framework é exigido para a confecção da página!<br>
 Você poderá:
 - efetuar um pull request da sua implementação diretamente no Github até a data limite de 09/02/2021 <br>
 ou  
-- encaminhar para o e-mail marcelo.cogo@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 30/07/2020. <br>
+- encaminhar para o e-mail marcelo.cogo@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 09/02/2021. <br>
 
 Qualquer problema ou dificuldade com o repositório ou a API Weatherstack, você pode entrar em contato conosco pelos e-mails, marcelo.cogo@aevo.com.br ou rh@aevo.com.br para que possamos sanar todas as dúvidas!
 
