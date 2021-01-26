@@ -1,7 +1,8 @@
-npm install on server and apiweather
-server: node app
-front: ng serve
-mongo db inicializado (database: "dbweather", collection: "card")
+Como usar:
+- npm install no diretório de server e apiweather
+- inicializar o mongo db (database: "dbweather", collection: "card")
+- executar no diretório server "node app"
+- executar no diretório apiweather "ng serve"
 
 Para caso a listagem não estiver aparecendo:
 -> Verificar erro de verbo http no console: (Access to XMLHttpRequest)
