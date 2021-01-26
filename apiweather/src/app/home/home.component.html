@@ -1,0 +1,99 @@
+<div class="center">
+  <input class="input" matInput type="text" [(ngModel)]="city" placeholder="City">
+  <input class="input" matInput type="text" [(ngModel)]="region" placeholder="Region">
+  <button mat-flat-button type="button" color="warn" (click)="getData()">Go</button>
+</div>
+
+<div id="single_card" style="display: none;">
+  <div class="content">
+    <div class="property-card">
+      <div class="property-title">
+        <h3>{{city_get}}</h3>
+        <p>{{region_get}}</p>
+        <br>
+        <button mat-flat-button color="warn">
+          <mat-icon type="button" color="basic" (click)="save()">save</mat-icon>
+        </button>
+      </div>
+      <div class="property-description">
+        <h5>Temperature: {{temperature_get}}ºC</h5>
+        <h5>Wind: {{wind_speed_get}}KMPH</h5>
+        <h5>Humidity: {{humidity_get}}%</h5>
+        <h5>Localtime: {{localtime_get}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="single_card" class="card" style="display: none;">
+  <div class="container">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th scope="col">City</th>
+          <th scope="col">Region</th>
+          <th scope="col">Temperature</th>
+          <th scope="col">Wind</th>
+          <th scope="col">Humidity</th>
+          <th scope="col">Localtime</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>{{city_get}}</td>
+          <td>{{region_get}}</td>
+          <td>{{temperature_get}}ºC</td>
+          <td>{{wind_speed_get}}KMPH</td>
+          <td>{{humidity_get}}%</td>
+          <td>{{localtime_get}}</td>
+          <td>
+            <button mat-flat-button>
+              <mat-icon type="button" color="primary" (click)="save()">save</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<div id="list" class="card" style="display: block">
+  <div class="container">
+    <table class="responsive-table">
+      <caption>Saveds</caption>
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">City</th>
+          <th scope="col">Region</th>
+          <th scope="col">Temperature</th>
+          <th scope="col">Wind</th>
+          <th scope="col">Humidity</th>
+          <th scope="col">Localtime</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let card of cards">
+          <td>{{card._id}}</td>
+          <td>{{card.city}}</td>
+          <td>{{card.region}}</td>
+          <td>{{card.temperature}}ºC</td>
+          <td>{{card.wind_speed}}KMPH</td>
+          <td>{{card.humidity}}%</td>
+          <td>{{card.localtime}}</td>
+          <td>
+            <button mat-flat-button>
+              <mat-icon type="button" color="warn" (click)="delete(card)">delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
