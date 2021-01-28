@@ -1,0 +1,159 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.heading{
+    color: #fff;
+    font-size: 2rem;
+
+    h1{
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    .region-input-field{
+        width: 100%;
+    }
+}
+
+.weather-header{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.region-info{  
+    text-align: left;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+    .title{
+        font-size: 4rem;
+    }
+    .subtitle{
+        margin-top: 10px;
+        color:#fff;
+        font-size: 1rem;
+    }
+}
+
+.coordinates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+
+    i{
+        font-size: 1rem
+    }
+    
+    span{
+        font-size: 1rem;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+}
+
+.temperature{
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 70px;
+
+    strong{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .description{
+        text-align: left;
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+}
+
+.weather-info-list{
+    width: 70%;
+    height:350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    .weather-info{
+        padding: 15px;
+    }
+}
+
+.weather-data{
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    background-color: #fff;
+    color:#492370;
+    border-radius: 100;
+}
+
+::ng-deep .mat-form-field {
+    .mat-input-element {
+        color: white;
+    }
+    .mat-form-field-label {
+        color: white;
+    }
+    .mat-form-field-underline {
+        background-color: white;
+    }
+    .mat-form-field-ripple {
+        background-color: white;
+    }
+    .mat-form-field-required-marker {
+        color: white;
+    }
+}
+
+::ng-deep .mat-form-field.mat-focused {
+    .mat-form-field-label {
+        color: white;
+    }
+    .mat-form-field-ripple {
+        background-color: #BC32F8;
+    }
+    .mat-form-field-required-marker {
+        color: #BC32F8;
+    }
+    .mat-input-element {
+        color: white;
+    }
+}
+
+::ng-deep .mat-form-field.mat-form-field-invalid {
+    .mat-input-element {
+        color: #BC32F8;
+    }
+    .mat-form-field-label {
+        color: white;
+        .mat-form-field-required-marker {
+            color: white;
+        }
+    }
+    .mat-form-field-ripple {
+        background-color: white;
+    }
+}
+
+
+
+

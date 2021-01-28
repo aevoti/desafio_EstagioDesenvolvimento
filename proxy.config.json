@@ -1,0 +1,11 @@
+{
+    "/api/*": {
+        "target": "http://api.weatherstack.com/",
+        "secure": false,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "changeOrigin": true
+    }
+}

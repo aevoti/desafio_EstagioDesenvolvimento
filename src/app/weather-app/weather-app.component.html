@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="heading">
+        <h1>Weather App</h1>
+
+        <form (ngSubmit)=getCurrentWeather() [formGroup]="form">
+            <mat-form-field class="region-input-field">
+                <mat-label>Search for Region</mat-label>
+                <input matInput placeholder="Ex. New York" required formControlName="region">
+            </mat-form-field>
+        </form>
+    </div>
+
+
+    <div *ngIf="currentWeather">
+        <div class="weather-header">
+            <div class="temperature">
+                <strong>{{currentWeather.temperature}}°C</strong>
+                <p>Observed at {{currentWeather.observationTime}}</p>
+                <div class="description"> {{currentWeather.description}} </div>
+            </div>
+            <div class="region-info">
+                <strong class="title">{{locationData.name}}</strong>
+                <p class="subtitle">{{locationData.region}} - {{locationData.country}}</p>
+                <div class="coordinates">
+                    <i class="material-icons">explore</i>
+                    <span>{{locationData.lat}} , {{locationData.lon}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-info-list">
+        <weather-info name="Humidity" [value]="currentWeather.humidity"></weather-info>
+        <weather-info name="Pressure" [value]="currentWeather.pressure"></weather-info>
+        <weather-info name="Preciptation" [value]="currentWeather.preciptation"></weather-info>
+        <weather-info name="Wind Speed" [value]="currentWeather.windSpeed"></weather-info>
+
+        <weather-info name="Wind Direction" [value]="currentWeather.windDirection"></weather-info>
+        <weather-info name="Visibility" [value]="currentWeather.visibility"></weather-info>
+        <weather-info name="UV Index" [value]="currentWeather.uvIndex"></weather-info>
+        <weather-info name="Feels like" [value]="currentWeather.feelsLike"></weather-info>
+    </div>
+
+</div>
