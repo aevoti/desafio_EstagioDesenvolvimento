@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ICurrentWeather } from '../models/icurrent-weather';
-import { ILocationData } from '../models/ilocation-data';
+import { ICurrentWeather } from '../shared/models/icurrent-weather';
+import { ILocationData } from '../shared/models/ilocation-data';
 import { WeatherApiService } from '../services/weather-api.service'
 import {
     faWind,
