@@ -19,16 +19,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const importsModules =
     [
         CommonModule,
-
-        // Material
         MatCardModule,
-        MatButtonModule,
-        MatExpansionModule,
-
         MatCardModule,
         MatIconModule,
-        MatListModule,
-
         MatFormFieldModule,
         FormsModule,
         MatInputModule,
