@@ -11,8 +11,9 @@
     backdrop-filter: blur(2px);
 }
 
-.weather-icon {
-    font-size: 48px;
+fa-icon{
+    color: white;
+    font-size: 32px
 }
 
 .name{
@@ -20,6 +21,7 @@
     padding-top: 10px;
     flex-wrap: wrap;
     font-size: 1rem;
+    color: lightgray;
 }
 
 
