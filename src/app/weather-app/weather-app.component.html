@@ -11,34 +11,36 @@
     </div>
 
 
-    <div *ngIf="currentWeather">
-        <div class="weather-header">
-            <div class="temperature">
-                <strong>{{currentWeather.temperature}}°C</strong>
-                <p>Observed at {{currentWeather.observationTime}}</p>
-                <div class="description"> {{currentWeather.description}} </div>
+    <div *ngIf="currentWeather" class="weather-header">
+        <div class="temperature">
+            <strong>{{currentWeather.temperature}}°C</strong>
+            <p>Observed at {{currentWeather.observationTime}}</p>
+            <div class="description">{{currentWeather.description}}</div>
+        </div>
+        <div class="region-info">
+            <strong class="title">{{locationData.name}}</strong>
+            <p class="subtitle">{{locationData.region}} - {{locationData.country}}</p>
+            <div class="coordinates">
+                <i class="material-icons">explore</i>
+                <span>{{locationData.lat}} , {{locationData.lon}}</span>
             </div>
-            <div class="region-info">
-                <strong class="title">{{locationData.name}}</strong>
-                <p class="subtitle">{{locationData.region}} - {{locationData.country}}</p>
-                <div class="coordinates">
-                    <i class="material-icons">explore</i>
-                    <span>{{locationData.lat}} , {{locationData.lon}}</span>
-                </div>
-            </div>
+        </div>
+        <div class="weather-icon">
+            <fa-icon [icon]="weatherIcon"></fa-icon>
         </div>
     </div>
 
-    <div class="weather-info-list">
-        <weather-info name="Humidity" [value]="currentWeather.humidity"></weather-info>
-        <weather-info name="Pressure" [value]="currentWeather.pressure"></weather-info>
-        <weather-info name="Preciptation" [value]="currentWeather.preciptation"></weather-info>
-        <weather-info name="Wind Speed" [value]="currentWeather.windSpeed"></weather-info>
+    <div *ngIf="currentWeather" class="weather-info-list">
+        <weather-info name="Humidity" [icon]="humidityIcon" value="{{currentWeather.humidity}}%"></weather-info>
+        <weather-info name="Pressure" [icon]="pressureIcon" value="{{currentWeather.pressure}} mb"></weather-info>
+        <weather-info name="Preciptation" [icon]="rainIcon" value="{{currentWeather.preciptation}} mm"></weather-info>
+        <weather-info name="Wind Speed" [icon]="windIcon" value="{{currentWeather.windSpeed}} km/h"></weather-info>
 
-        <weather-info name="Wind Direction" [value]="currentWeather.windDirection"></weather-info>
-        <weather-info name="Visibility" [value]="currentWeather.visibility"></weather-info>
-        <weather-info name="UV Index" [value]="currentWeather.uvIndex"></weather-info>
-        <weather-info name="Feels like" [value]="currentWeather.feelsLike"></weather-info>
+        <weather-info name="Wind Direction" [icon]="directionIcon"
+            value="{{currentWeather.windDirection}} {{currentWeather.windDegree}}º">
+        </weather-info>
+        <weather-info name="Visibility" [icon]="visibilityIcon" value="{{currentWeather.visibility}} km"></weather-info>
+        <weather-info name="UV Index" [icon]="uvIcon" value="{{currentWeather.uvIndex}}"></weather-info>
+        <weather-info name="Feels like" [icon]="feelsLikeIcon" value="{{currentWeather.feelsLike}} °C"></weather-info>
     </div>
-
 </div>
