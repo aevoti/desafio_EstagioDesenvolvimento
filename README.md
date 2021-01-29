@@ -15,3 +15,5 @@ Passos para utilizar a aplicação:
 - npm start para executar.
 - npm run compodoc para gerar documentação.
 
+
+Documentação em  documentation/index.html
