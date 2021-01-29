@@ -1,0 +1,1178 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>desafio-estagio-desenvolvimento documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">desafio-estagio-desenvolvimento documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>WeatherAppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/weather-app/weather-app.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>weather-app</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./weather-app.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./weather-app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentWeather">currentWeather</a>
+                            </li>
+                            <li>
+                                <a href="#directionIcon">directionIcon</a>
+                            </li>
+                            <li>
+                                <a href="#feelsLikeIcon">feelsLikeIcon</a>
+                            </li>
+                            <li>
+                                <a href="#form">form</a>
+                            </li>
+                            <li>
+                                <a href="#humidityIcon">humidityIcon</a>
+                            </li>
+                            <li>
+                                <a href="#locationData">locationData</a>
+                            </li>
+                            <li>
+                                <a href="#pressureIcon">pressureIcon</a>
+                            </li>
+                            <li>
+                                <a href="#rainIcon">rainIcon</a>
+                            </li>
+                            <li>
+                                <a href="#uvIcon">uvIcon</a>
+                            </li>
+                            <li>
+                                <a href="#visibilityIcon">visibilityIcon</a>
+                            </li>
+                            <li>
+                                <a href="#weatherIcon">weatherIcon</a>
+                            </li>
+                            <li>
+                                <a href="#windIcon">windIcon</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getCurrentWeather">getCurrentWeather</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setWeatherIcon">setWeatherIcon</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(weatherApiService: <a href="../injectables/WeatherApiService.html">WeatherApiService</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/weather-app/weather-app.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>weatherApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WeatherApiService.html" target="_self" >WeatherApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentWeather"></a>
+                    <span class="name">
+                        <b>
+                            getCurrentWeather
+                        </b>
+                        <a href="#getCurrentWeather"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCurrentWeather()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/weather-app/weather-app.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/weather-app/weather-app.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setWeatherIcon"></a>
+                    <span class="name">
+                        <b>
+                            setWeatherIcon
+                        </b>
+                        <a href="#setWeatherIcon"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setWeatherIcon(weatherCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/weather-app/weather-app.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>weatherCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentWeather"></a>
+                        <span class="name">
+                            <b>
+                            currentWeather</b>
+                            <a href="#currentWeather"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ICurrentWeather.html" target="_self" >ICurrentWeather</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/weather-app/weather-app.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="directionIcon"></a>
+                        <span class="name">
+                            <b>
+                            directionIcon</b>
+                            <a href="#directionIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faLocationArrow</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/weather-app/weather-app.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="feelsLikeIcon"></a>
+                        <span class="name">
+                            <b>
+                            feelsLikeIcon</b>
+                            <a href="#feelsLikeIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faTemperatureLow</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/weather-app/weather-app.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="form"></a>
+                        <span class="name">
+                            <b>
+                            form</b>
+                            <a href="#form"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/weather-app/weather-app.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="humidityIcon"></a>
+                        <span class="name">
+                            <b>
+                            humidityIcon</b>
+                            <a href="#humidityIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faTint</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/weather-app/weather-app.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locationData"></a>
+                        <span class="name">
+                            <b>
+                            locationData</b>
+                            <a href="#locationData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ILocationData.html" target="_self" >ILocationData</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/weather-app/weather-app.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pressureIcon"></a>
+                        <span class="name">
+                            <b>
+                            pressureIcon</b>
+                            <a href="#pressureIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faCompass</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/weather-app/weather-app.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rainIcon"></a>
+                        <span class="name">
+                            <b>
+                            rainIcon</b>
+                            <a href="#rainIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faCloudShowersHeavy</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/weather-app/weather-app.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uvIcon"></a>
+                        <span class="name">
+                            <b>
+                            uvIcon</b>
+                            <a href="#uvIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faSun</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/weather-app/weather-app.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="visibilityIcon"></a>
+                        <span class="name">
+                            <b>
+                            visibilityIcon</b>
+                            <a href="#visibilityIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faSmog</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/weather-app/weather-app.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="weatherIcon"></a>
+                        <span class="name">
+                            <b>
+                            weatherIcon</b>
+                            <a href="#weatherIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>IconDefinition</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/weather-app/weather-app.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="windIcon"></a>
+                        <span class="name">
+                            <b>
+                            windIcon</b>
+                            <a href="#windIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faWind</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/weather-app/weather-app.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup } from &#x27;@angular/forms&#x27;;
+import { ICurrentWeather } from &#x27;../models/icurrent-weather&#x27;;
+import { ILocationData } from &#x27;../models/ilocation-data&#x27;;
+import { WeatherApiService } from &#x27;../services/weather-api.service&#x27;
+import {
+    faWind,
+    faCloudShowersHeavy,
+    faLocationArrow,
+    faSmog,
+    faSun,
+    faTemperatureLow,
+    faTint,
+    faCompass,
+    faCloudRain,
+    faCloudSunRain,
+    faSnowflake,
+    faCloud,
+    faBolt,
+    faCloudSun
+} from &#x27;@fortawesome/free-solid-svg-icons&#x27;
+import { IconDefinition } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+
+
+@Component({
+    selector: &#x27;weather-app&#x27;,
+    templateUrl: &#x27;./weather-app.component.html&#x27;,
+    styleUrls: [&#x27;./weather-app.component.scss&#x27;]
+})
+export class WeatherAppComponent implements OnInit {
+
+    constructor(private weatherApiService: WeatherApiService,
+        private formBuilder: FormBuilder) { }
+
+    form: FormGroup;
+    locationData: ILocationData;
+    currentWeather: ICurrentWeather;
+
+    pressureIcon &#x3D; faCompass;
+    windIcon &#x3D; faWind;
+    directionIcon &#x3D; faLocationArrow;
+    rainIcon &#x3D; faCloudShowersHeavy;
+    visibilityIcon &#x3D; faSmog;
+    uvIcon &#x3D; faSun;
+    feelsLikeIcon &#x3D; faTemperatureLow;
+    humidityIcon &#x3D; faTint;
+    weatherIcon: IconDefinition;
+
+    ngOnInit(): void {
+        this.form &#x3D; this.formBuilder.group({
+            region: [null],
+        })
+    }
+
+    getCurrentWeather() {
+        this.weatherApiService.getCurrentWeather(this.form.get(&#x27;region&#x27;).value)
+            .subscribe(response &#x3D;&gt; {
+                this.locationData &#x3D; response.location;
+                const current &#x3D; response.current;
+                this.currentWeather &#x3D; {
+                    observationTime: current.observation_time,
+                    temperature: current.temperature,
+                    code: current.weather_code,
+                    description: current.weather_descriptions,
+                    windSpeed: current.wind_speed,
+                    windDegree: current.wind_degree,
+                    windDirection: current.wind_dir,
+                    pressure: current.pressure,
+                    preciptation: current.precip,
+                    humidity: current.humidity,
+                    cloudCover: current.cloudover,
+                    feelsLike: current.feelslike,
+                    uvIndex: current.uv_index,
+                    visibility: current.visibility,
+                    isDay: current.is_day &#x3D;&#x3D;&#x3D; &#x27;yes&#x27;,
+                }
+                console.log(this.currentWeather.code)
+                this.setWeatherIcon(this.currentWeather.code);
+            })
+    }
+
+    setWeatherIcon(weatherCode: number) {
+        if (weatherCode &#x3D;&#x3D;&#x3D; 113) {
+            this.weatherIcon &#x3D; faSun;
+        }
+        if (weatherCode &#x3D;&#x3D;&#x3D; 116) {
+            this.weatherIcon &#x3D; faCloudSun;
+        }
+        if (weatherCode &#x3D;&#x3D;&#x3D; 119 || weatherCode &#x3D;&#x3D;&#x3D; 112) {
+            this.weatherIcon &#x3D; faCloud;
+        }
+        if (weatherCode &#x3D;&#x3D;&#x3D; 143 || weatherCode &#x3D;&#x3D;&#x3D; 248 || weatherCode &#x3D;&#x3D;&#x3D; 260) {
+            this.weatherIcon &#x3D; faSmog;
+        }
+        if (weatherCode &gt; 143 &amp;&amp; weatherCode &lt; 200) {
+            this.weatherIcon &#x3D; faCloudSunRain;
+        }
+        if (weatherCode &#x3D;&#x3D;&#x3D; 200) {
+            this.weatherIcon &#x3D; faBolt;
+        }
+        if (weatherCode &#x3D;&#x3D;&#x3D; 227 || weatherCode &#x3D;&#x3D;&#x3D; 230) {
+            this.weatherIcon &#x3D; faSnowflake;
+        }
+        if (weatherCode &gt; 260) {
+            this.weatherIcon &#x3D; faCloudRain;
+        }
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;heading&quot;&gt;
+        &lt;h1&gt;Weather App&lt;/h1&gt;
+
+        &lt;form (ngSubmit)&#x3D;getCurrentWeather() [formGroup]&#x3D;&quot;form&quot;&gt;
+            &lt;mat-form-field class&#x3D;&quot;region-input-field&quot;&gt;
+                &lt;mat-label&gt;Search for Region&lt;/mat-label&gt;
+                &lt;input matInput placeholder&#x3D;&quot;Ex. New York&quot; required formControlName&#x3D;&quot;region&quot;&gt;
+            &lt;/mat-form-field&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+
+
+    &lt;div *ngIf&#x3D;&quot;currentWeather&quot; class&#x3D;&quot;weather-header&quot;&gt;
+        &lt;div class&#x3D;&quot;temperature&quot;&gt;
+            &lt;strong&gt;{{currentWeather.temperature}}°C&lt;/strong&gt;
+            &lt;p&gt;Observed at {{currentWeather.observationTime}}&lt;/p&gt;
+            &lt;div class&#x3D;&quot;description&quot;&gt;{{currentWeather.description}}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;region-info&quot;&gt;
+            &lt;strong class&#x3D;&quot;title&quot;&gt;{{locationData.name}}&lt;/strong&gt;
+            &lt;p class&#x3D;&quot;subtitle&quot;&gt;{{locationData.region}} - {{locationData.country}}&lt;/p&gt;
+            &lt;div class&#x3D;&quot;coordinates&quot;&gt;
+                &lt;i class&#x3D;&quot;material-icons&quot;&gt;explore&lt;/i&gt;
+                &lt;span&gt;{{locationData.lat}} , {{locationData.lon}}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;weather-icon&quot;&gt;
+            &lt;fa-icon [icon]&#x3D;&quot;weatherIcon&quot;&gt;&lt;/fa-icon&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div *ngIf&#x3D;&quot;currentWeather&quot; class&#x3D;&quot;weather-info-list&quot;&gt;
+        &lt;weather-info name&#x3D;&quot;Humidity&quot; [icon]&#x3D;&quot;humidityIcon&quot; value&#x3D;&quot;{{currentWeather.humidity}}%&quot;&gt;&lt;/weather-info&gt;
+        &lt;weather-info name&#x3D;&quot;Pressure&quot; [icon]&#x3D;&quot;pressureIcon&quot; value&#x3D;&quot;{{currentWeather.pressure}} mb&quot;&gt;&lt;/weather-info&gt;
+        &lt;weather-info name&#x3D;&quot;Preciptation&quot; [icon]&#x3D;&quot;rainIcon&quot; value&#x3D;&quot;{{currentWeather.preciptation}} mm&quot;&gt;&lt;/weather-info&gt;
+        &lt;weather-info name&#x3D;&quot;Wind Speed&quot; [icon]&#x3D;&quot;windIcon&quot; value&#x3D;&quot;{{currentWeather.windSpeed}} km/h&quot;&gt;&lt;/weather-info&gt;
+
+        &lt;weather-info name&#x3D;&quot;Wind Direction&quot; [icon]&#x3D;&quot;directionIcon&quot;
+            value&#x3D;&quot;{{currentWeather.windDirection}} {{currentWeather.windDegree}}º&quot;&gt;
+        &lt;/weather-info&gt;
+        &lt;weather-info name&#x3D;&quot;Visibility&quot; [icon]&#x3D;&quot;visibilityIcon&quot; value&#x3D;&quot;{{currentWeather.visibility}} km&quot;&gt;&lt;/weather-info&gt;
+        &lt;weather-info name&#x3D;&quot;UV Index&quot; [icon]&#x3D;&quot;uvIcon&quot; value&#x3D;&quot;{{currentWeather.uvIndex}}&quot;&gt;&lt;/weather-info&gt;
+        &lt;weather-info name&#x3D;&quot;Feels like&quot; [icon]&#x3D;&quot;feelsLikeIcon&quot; value&#x3D;&quot;{{currentWeather.feelsLike}} °C&quot;&gt;&lt;/weather-info&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./weather-app.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+.heading{
+    color: #fff;
+    font-size: 2rem;
+
+    h1{
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    .region-input-field{
+        width: 100%;
+    }
+}
+
+.weather-header{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.weather-icon{
+    fa-icon{
+        font-size: 8rem;
+    }
+}
+
+.region-info{  
+    text-align: left;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-right: 150px;
+    
+    .title{
+        font-size: 3rem;
+    }
+    .subtitle{
+        margin-top: 12px;
+        color:#fff;
+        font-size: 1rem;
+    }
+
+}
+
+.coordinates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    i{
+        font-size: 1rem
+    }
+    
+    span{
+        font-size: 1rem;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+}
+
+.temperature{
+    text-align: left;
+    margin-top: 15px;
+    // margin-bottom: 15px;
+    margin-right: 70px;
+    text-align: left;
+    color: #fff;
+
+    strong{
+        margin-bottom: 15px;
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .description{
+        font-size: 2rem;
+    }
+}
+
+
+.weather-info-list{
+    display: flex;
+    width: 70%;
+    height: 350px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    .weather-info{
+        padding: 15px;
+    }
+}
+
+.weather-data{
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    background-color: #fff;
+    color:#492370;
+    border-radius: 100;
+}
+
+::ng-deep .mat-form-field {
+    .mat-input-element {
+        color: white;
+    }
+    .mat-form-field-label {
+        color: white;
+    }
+    .mat-form-field-underline {
+        background-color: white;
+    }
+    .mat-form-field-ripple {
+        background-color: white;
+    }
+    .mat-form-field-required-marker {
+        color: white;
+    }
+}
+
+::ng-deep .mat-form-field.mat-focused {
+    .mat-form-field-label {
+        color: white;
+    }
+    .mat-form-field-ripple {
+        background-color: #BC32F8;
+    }
+    .mat-form-field-required-marker {
+        color: #BC32F8;
+    }
+    .mat-input-element {
+        color: white;
+    }
+}
+
+::ng-deep .mat-form-field.mat-form-field-invalid {
+    .mat-input-element {
+        color: #BC32F8;
+    }
+    .mat-form-field-label {
+        color: white;
+        .mat-form-field-required-marker {
+            color: white;
+        }
+    }
+    .mat-form-field-ripple {
+        background-color: white;
+    }
+}
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">    <div class="heading">        <h1>Weather App</h1>        <form (ngSubmit)=getCurrentWeather() [formGroup]="form">            <mat-form-field class="region-input-field">                <mat-label>Search for Region</mat-label>                <input matInput placeholder="Ex. New York" required formControlName="region">            </mat-form-field>        </form>    </div>    <div *ngIf="currentWeather" class="weather-header">        <div class="temperature">            <strong>{{currentWeather.temperature}}°C</strong>            <p>Observed at {{currentWeather.observationTime}}</p>            <div class="description">{{currentWeather.description}}</div>        </div>        <div class="region-info">            <strong class="title">{{locationData.name}}</strong>            <p class="subtitle">{{locationData.region}} - {{locationData.country}}</p>            <div class="coordinates">                <i class="material-icons">explore</i>                <span>{{locationData.lat}} , {{locationData.lon}}</span>            </div>        </div>        <div class="weather-icon">            <fa-icon [icon]="weatherIcon"></fa-icon>        </div>    </div>    <div *ngIf="currentWeather" class="weather-info-list">        <weather-info name="Humidity" [icon]="humidityIcon" value="{{currentWeather.humidity}}%"></weather-info>        <weather-info name="Pressure" [icon]="pressureIcon" value="{{currentWeather.pressure}} mb"></weather-info>        <weather-info name="Preciptation" [icon]="rainIcon" value="{{currentWeather.preciptation}} mm"></weather-info>        <weather-info name="Wind Speed" [icon]="windIcon" value="{{currentWeather.windSpeed}} km/h"></weather-info>        <weather-info name="Wind Direction" [icon]="directionIcon"            value="{{currentWeather.windDirection}} {{currentWeather.windDegree}}º">        </weather-info>        <weather-info name="Visibility" [icon]="visibilityIcon" value="{{currentWeather.visibility}} km"></weather-info>        <weather-info name="UV Index" [icon]="uvIcon" value="{{currentWeather.uvIndex}}"></weather-info>        <weather-info name="Feels like" [icon]="feelsLikeIcon" value="{{currentWeather.feelsLike}} °C"></weather-info>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'WeatherAppComponent', 'selector': 'weather-app'},{'name': 'WeatherInfoComponent', 'selector': 'weather-info'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'WeatherAppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'WeatherAppComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
