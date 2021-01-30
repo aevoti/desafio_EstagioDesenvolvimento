@@ -1,0 +1,23 @@
+<header>
+	<h1 (click)="goHome()">WeatherPage</h1>
+	<div class="searchBar">
+		<input
+			type="text"
+			id="txtCity"
+			class="searchBarItems"
+			placeholder="Enter a city name"
+			(keyup)="keyUp($event)"
+		>
+		<button class="searchBarItems" (click)="searchCity()">
+			<i class="fas fa-search"></i>
+		</button>
+	</div>
+</header>
+
+<div class="mainBody">
+	<router-outlet></router-outlet>
+</div>
+
+<footer>
+	<p>Real-Time & Historical World Weather Data API used was <a href="https://weatherstack.com/" target="_blank">weatherstack</a></p>
+</footer>

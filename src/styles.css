@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Varela+Round&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    background-color: rgb(53, 53, 53);
+
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}

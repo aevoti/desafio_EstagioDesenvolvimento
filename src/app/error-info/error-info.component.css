@@ -1,0 +1,30 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 147, 147);
+
+    background-color: rgba(129, 85, 85, 0.267);
+
+    padding: 20px 40px;
+}
+
+div h1 {
+    font-size: 55pt;
+    color: rgb(243, 87, 87);
+    margin: 0;
+}
+
+div h2 {
+    font-size: 40pt;
+    margin: 10px;
+}
+
+div p {
+    font-size: 20pt;
+    margin: 0;
+}
