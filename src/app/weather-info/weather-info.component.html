@@ -1,0 +1,70 @@
+<div *ngIf="weatherData" class="weatherContainer">
+    <div class="localContainer">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>{{ weatherData.location.name }}, {{ weatherData.location.region }} - {{ weatherData.location.country }}</h3>
+    </div>
+    <p class="localTimeContainer">{{ getLocalTime(weatherData.location.localtime) }}</p>
+    <div class="weatherInfoContainer">
+        <figure>
+            <img src={{weatherData.current.weather_icons}} alt="weather_icon">
+            <figcaption>{{weatherData.current.weather_descriptions}}</figcaption>
+        </figure>
+        <div class="temperatureContainer">
+            <h1>{{weatherData.current.temperature}}°C</h1>
+            <h2>feels like: {{weatherData.current.feelslike}}°C</h2>
+        </div>
+        <div class="weatherExtraInfoContainer">
+            <span>
+                <i class="fas fa-wind"></i>
+                <p>Wind: {{weatherData.current.wind_speed}} Km/h</p>
+            </span>
+            <span>
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Pressure: {{weatherData.current.pressure}} mb</p>
+            </span>
+            <span>
+                <i class="fas fa-cloud-rain"></i>
+                <p>Precipitation: {{weatherData.current.precip}} mm</p>
+            </span>
+            <span>
+                <i class="fas fa-tint"></i>
+                <p>Humidity: {{weatherData.current.humidity}}%</p>
+            </span>
+        </div>
+    </div>
+    <p class="lastCollectionContainer">Time when the data was collected: {{weatherData.current.observation_time}}</p>
+</div>
+
+<!-- <div *ngIf="weatherData" class="weatherContainer">
+    <div class="localContainer">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Maceio, Alagoas - Brazil</h3>
+    </div>
+    <p class="localTimeContainer">Friday, 13:32</p>
+    <div class="temperatureContainer">
+        <figure>
+            <img src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png" alt="weather_icon">
+            <figcaption>Sunny</figcaption>
+        </figure>
+        <h1>27°C</h1>
+        <div>
+            <span>
+                <i class="fas fa-wind"></i>
+                <p>Wind: 17 Km/h</p>
+            </span>
+            <span>
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Pressure: 1012 mb</p>
+            </span>
+            <span>
+                <i class="fas fa-cloud-rain"></i>
+                <p>Precipitation: 10 mm</p>
+            </span>
+            <span>
+                <i class="fas fa-tint"></i>
+                <p>Humidity: 22%</p>
+            </span>
+        </div>
+    </div>
+    <p class="lastCollectionContainer">Time when the data was collected: 01:31 AM</p>
+</div> -->

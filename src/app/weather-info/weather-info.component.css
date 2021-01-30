@@ -1,0 +1,100 @@
+.weatherContainer {
+    background-color: rgba(20, 25, 63, 0.7);
+
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.localContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 0;
+}
+
+.localContainer i, .localContainer h3 {
+    font-size: 15pt;
+}
+
+.localContainer h3 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.localTimeContainer {
+    margin: 5px 0 5px 0;
+}
+
+.weatherInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.weatherInfoContainer figure {
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+.weatherInfoContainer figure figcaption {
+    font-size: 11pt;
+}
+
+.weatherInfoContainer .temperatureContainer {
+    margin: 5px 25px;
+
+}
+
+.weatherInfoContainer .temperatureContainer h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30pt;
+
+    margin: 0;
+}
+
+.weatherInfoContainer .temperatureContainer h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 10pt;
+}
+
+.weatherInfoContainer .weatherExtraInfoContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 0 20px 0;
+}
+
+.weatherInfoContainer .weatherExtraInfoContainer span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.weatherInfoContainer .weatherExtraInfoContainer span i {
+    margin-right: 5px;
+}
+
+.weatherInfoContainer .weatherExtraInfoContainer span p {
+    margin: 3px;
+}
+
+.lastCollectionContainer {
+    margin: 0;
+
+    font-size: 10pt;
+
+    align-self: flex-end;
+}

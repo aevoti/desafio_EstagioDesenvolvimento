@@ -1,0 +1,64 @@
+.divBody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 700px;
+
+    background-color: rgb(235, 235, 235);
+
+    color: rgb(26, 26, 26);
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.divBody h3 .appName {
+    font-family: 'Varela Round', sans-serif;
+
+    margin: 0;
+
+    display: inline-block;
+}
+
+.divBody h3 a {
+    color: inherit;
+}
+
+.divBody h3 a:hover {
+    color: rgb(26, 26, 26, 0.7);
+}
+
+.divBody hr {
+    border-color: rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+
+    width: 90%;
+}
+
+.divBody .boxes {
+    display: flex;
+    
+    width: 90%;
+
+    padding: 0 10px;
+}
+
+.divBody .boxes div {
+    margin: 20px 10px;
+}
+
+.divBody .boxes div i {
+    font-size: 15pt;
+
+    margin-right: 5px;
+}
+
+.divBody .boxes div h4 {
+    display: inline-block;
+
+    font-size: 13pt;
+
+    margin: 0;
+}
