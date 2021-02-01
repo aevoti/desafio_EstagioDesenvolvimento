@@ -29,10 +29,9 @@ function App() {
         axios.get('http://localhost:8080/key')
         .then(res => res.data)
         .then(data => ({
-                    access_key: data.accessKey,
-                    query: `${city}, ${region}`
-                }
-            )
+                access_key: data.accessKey,
+                query: `${city}, ${region}`
+            })
         )
         .then(params => {
             axios.get(url, { params })
