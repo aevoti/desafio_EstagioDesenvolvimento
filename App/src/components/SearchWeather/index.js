@@ -2,6 +2,8 @@ import React from 'react';
 import Input from '../Input';
 import Button from '../Button';
 
+import './style.css';
+
 function SearchWeather(props) {
     return (
         <form className={props.className} onSubmit={props.onSubmit}>
