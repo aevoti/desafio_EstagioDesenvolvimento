@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import './style.css';
 
-import WeatherIcon from './components/WeatherIcon';
 import SearchWeather from './components/SearchWeather';
 import LocationDate from './components/LocationDate';
 import Weather from './components/Weather';
@@ -57,7 +56,6 @@ function App() {
 
             <div className="weather-panel">
                 <LocationDate className="panel-top" location={location} />
-                <WeatherIcon className="panel-mid" current={current} />
                 <Weather className="panel-bottom" current={current} /> 
             </div>
         </div>

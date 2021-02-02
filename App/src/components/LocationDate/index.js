@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.css';
+
 function LocationDate(props) {
     const showLocation = props.location.name ? `${props.location.name}, ${props.location.region}, ${props.location.country}` : ' ';
 
