@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.css';
+
 function Figure(props) {
     return (
         <figure className={props.className}>

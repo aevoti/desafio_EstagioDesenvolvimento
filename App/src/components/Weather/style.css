@@ -1,0 +1,21 @@
+.panel-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 1em;
+    justify-content: end;
+}
+
+.temperature {
+    width: 30%;
+    font-size: 6em;
+    text-align: right;
+    margin-bottom: .2em;
+}

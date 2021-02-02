@@ -1,0 +1,15 @@
+.panel-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+
+    font-size: 2em;
+}
+
+.icon-container {
+    width: 60%;
+    height: 60%;
+}
