@@ -1,5 +1,8 @@
 .search button {
     width: 25%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: .2em;
+    border: none;
+    outline: none;
 }

@@ -3,7 +3,9 @@
     width: 50%;
     height: 100%;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding-left: .5em;
+    font-size: .8em;
 }
 
 .search input:focus {
