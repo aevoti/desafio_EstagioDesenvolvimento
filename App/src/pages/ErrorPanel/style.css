@@ -1,16 +1,15 @@
-.home {
+.error {
     width: 100%;
     text-align: center;
-    color:#fff;
+    color: #fff;
 }
 
-.home h1 {
+.error h1 {
     font-size: 5em;
     margin-top: .3em;
     margin-bottom: 0;
 }
 
-.home h2 {
-    font-size: 1.5em;
-    margin-top: .3em;
+.error p {
+    font-size: 1.8em;
 }
