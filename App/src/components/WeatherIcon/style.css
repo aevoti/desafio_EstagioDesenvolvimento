@@ -3,12 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 100%;
     
     margin-top: .6em;
-}
-
-.icon-container {
-    width: 60%;
-    height: 60%;
 }

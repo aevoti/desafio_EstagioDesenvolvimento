@@ -1,3 +1,12 @@
 .panel-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+}
+
+.date {
+    font-size: .8em;
+    margin-right: 2em;
 }

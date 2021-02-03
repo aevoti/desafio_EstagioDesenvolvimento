@@ -12,7 +12,7 @@ function Weather(props) {
                 <div className="statistics-container">
                     <span>Wind: {props.current.wind_speed || 0} kmph</span>
                     <span>Precip: {props.current.precip || 0} mm</span>
-                    <span>Pressure: {props.current.pressure || 1000} mb</span>
+                    <span>Pressure: {props.current.pressure || 0} mb</span>
                 </div>
             </div>
         </div>
