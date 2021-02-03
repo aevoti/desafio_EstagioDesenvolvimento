@@ -8,6 +8,7 @@ import './global.css';
 import SearchWeather from './components/SearchWeather';
 import WeatherPanel from './pages/WeatherPanel';
 import ErrorPanel from './pages/ErrorPanel';
+import HomePanel from './pages/HomePanel';
 
 function App() {
     const [cityName, setCity] = useState('');
@@ -74,6 +75,9 @@ function App() {
 
                 <div className="weather-container">
                     <Switch>
+                        <Route exact path="/">
+                            <HomePanel className="home" />
+                        </Route>
                         <Route path="/weather">
                             <WeatherPanel current={current} location={location} />
                         </Route>
