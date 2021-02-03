@@ -6,6 +6,7 @@ import './style.css';
 import './global.css';
 
 import SearchWeather from './components/SearchWeather';
+import Header from './components/Header';
 import WeatherPanel from './pages/WeatherPanel';
 import ErrorPanel from './pages/ErrorPanel';
 import HomePanel from './pages/HomePanel';
@@ -64,7 +65,7 @@ function App() {
     return (
         <Router>
             {redirect ? <Redirect to={redirect}/> : ''}
-
+            <Header />
             <div className="container">
                 <SearchWeather 
                     className="search" 

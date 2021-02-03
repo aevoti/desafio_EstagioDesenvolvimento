@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+    margin-top: 0;
+}
+
+header h1 {
+    margin: .2em auto auto .5em;
+    font-size: 1.6em;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
