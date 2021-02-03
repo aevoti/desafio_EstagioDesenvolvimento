@@ -9,7 +9,7 @@ function SearchWeather(props) {
         <form className={props.className} onSubmit={props.onSubmit}>
             <Input value={props.city.name} onChange={props.city.handleCityInput} placeholder="City"/>
             <Input value={props.region.name} onChange={props.region.handleRegionInput} placeholder="Region" />
-            <Button type="submit"/>
+            <Button type="submit" text="Search"/>
         </form>
     )
 }
