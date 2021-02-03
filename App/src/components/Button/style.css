@@ -1,10 +1,10 @@
 .search button {
     width: 25%;
     height: 1.7em;
-    border-radius: 20px;
     border: none;
     outline: none;
     background-image: linear-gradient(to bottom right, var(--gradient-color-one), var(--gradient-color-two));
+    border-radius: 20px;
     color: #fff;
     font-size: 1em;
 }
