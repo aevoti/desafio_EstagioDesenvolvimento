@@ -25,9 +25,11 @@
 .temperature {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     margin-left: .3em;
-    font-size: 5em;
+    font-size: 6em;
     text-align: left;
     margin-bottom: .2em;
+
+    width: 1.4em;
 }
