@@ -31,6 +31,7 @@ body {
     background-color: var(--primary-color);
     border: 4px solid var(--secondary-color);
     border-radius: 10px;
+    overflow: auto;
 }
 
 

@@ -20,9 +20,7 @@ app.get('/weather', (req, res) => {
 })
 
 app.post('/weather', (req, res) => {
-    const doc = {
-        name: req.body.name
-    }
+    const doc = {...req.body};
     db.insert(doc, (e, result) => {
         if(e) res.json(e);
         res.json(result);

@@ -10,6 +10,8 @@ import Header from './components/Header';
 import WeatherPanel from './pages/WeatherPanel';
 import ErrorPanel from './pages/ErrorPanel';
 import HomePanel from './pages/HomePanel';
+import HistoryPanel from './pages/HistoryPanel';
+import HistoryTableRow from './components/HistoryTableRow';
 
 function App() {
     const [cityName, setCity] = useState('');
@@ -17,9 +19,9 @@ function App() {
     const [location, setLocation] = useState({});
     const [current, setCurrent] = useState({});
     const [redirect, setRedirect] = useState(null);
+    const [weatherHistory, setWeatherHistory] = useState([]);
 
     useEffect(() => {
-        console.log(redirect)
         setRedirect(null);
     }, [redirect])
 
@@ -45,27 +47,49 @@ function App() {
         .then(params => {
             axios.get(url, { params })
             .then(res => {
-                console.log(res)
                 if(res.data.success === false) {
                     setRedirect('/erro')
-                }
-
-                else {
+                } else {
                     setCurrent({ ...res.data.current })
                     setLocation({ ...res.data.location })
+                    post(res.data.location, res.data.current);
                     setRedirect('/weather')
                 }
             })
         })
     }
 
+    const fetchHistory = () => {
+        axios.get('http://localhost:8080/weather')
+        .then(res => { 
+            setWeatherHistory([...res.data]);
+        })
+    }
+
+    const post = (location, current) => {
+        const doc = {
+            city: location.name,
+            region: location.region,
+            country: location.country,
+            temperature: current.temperature,
+            desc: current.weather_descriptions,
+            wind: current.wind_speed,
+            precip: current.precip,
+            pressure: current.pressure,
+            localtime: location.localtime_epoch
+        }
+
+        axios.post('http://localhost:8080/weather', { data: doc })
+    }
+
     const city = { name: cityName, handleCityInput };
     const region = { name: regionName, handleRegionInput }
+    const rows = weatherHistory.map(e => <HistoryTableRow element={e} />)
     
     return (
         <Router>
             {redirect ? <Redirect to={redirect}/> : ''}
-            <Header />
+            <Header fetchData={fetchHistory}/>
             <div className="container">
                 <SearchWeather 
                     className="search" 
@@ -85,6 +109,10 @@ function App() {
 
                         <Route path="/erro">
                             <ErrorPanel className="error" />
+                        </Route>
+
+                        <Route path="/history"> 
+                            <HistoryPanel className="history" rows={rows} />
                         </Route>
                     </Switch>
                 </div>

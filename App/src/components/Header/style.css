@@ -1,6 +1,7 @@
 header {
     width: 100%;
     margin-top: 0;
+    position: relative;
 }
 
 header h1 {
