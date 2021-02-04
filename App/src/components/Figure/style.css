@@ -3,14 +3,14 @@
     padding: 0;
 
     text-align: center;
-    font-size: 1.8em;
 }
 
 .weather-icon img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
 }
 
 .weather-icon figcaption {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 1.4em;
 }
