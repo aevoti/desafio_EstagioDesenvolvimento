@@ -7,8 +7,8 @@ function run() {
     return new Promise(async resolve => {
         client.connect();
 
-        const db = client.db('test');
-        const collection = db.collection('teste')
+        const db = client.db('weatherdb');
+        const collection = db.collection('weather');
         
         resolve(collection);
     })
