@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 
 function HistoryTableRow(props) {
     return (
@@ -12,6 +13,7 @@ function HistoryTableRow(props) {
             <td>{props.element.precip}</td>
             <td>{props.element.pressure}</td>
             <td>{props.element.localtime}</td>
+            <td><Button text="Delete" onClick={props.delete} /></td>
         </tr>
     )
 }

@@ -4,18 +4,19 @@ import './style.css';
 
 function HistoryTable(props) {
     return (
-        <table>
+        <table className={props.className}>
             <thead>
                 <tr>
-                    <td>City</td>
-                    <td>Region</td>
-                    <td>Country</td>
-                    <td>Temperature</td>
-                    <td>desc</td>
-                    <td>Wind</td>
-                    <td>precip</td>
-                    <td>pressure</td>
-                    <td>localtime</td>
+                    <th>City</th>
+                    <th>Region</th>
+                    <th>Country</th>
+                    <th>Temp</th>
+                    <th>desc</th>
+                    <th>Wind</th>
+                    <th>precip</th>
+                    <th>press</th>
+                    <th>localtime</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
