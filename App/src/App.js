@@ -84,7 +84,7 @@ function App() {
 
     const city = { name: cityName, handleCityInput };
     const region = { name: regionName, handleRegionInput }
-    const rows = weatherHistory.map(e => <HistoryTableRow element={e} />)
+    const rows = weatherHistory.map(e => <HistoryTableRow key={e._id} element={e.data} />)
     
     return (
         <Router>
