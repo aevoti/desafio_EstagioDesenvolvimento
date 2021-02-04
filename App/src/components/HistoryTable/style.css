@@ -11,10 +11,12 @@
 .history td {
     padding: 0 8px 0 8px;
     width: 25%;
+    height: 50px;
 }
 
 .history th {
     padding: 10px 8px 10px 8px;
+    height: 40px;
     font-size: 1.1em;
     font-weight: 600;
     border-bottom: 1px solid var(--secondary-color);
