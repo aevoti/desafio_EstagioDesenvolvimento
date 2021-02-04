@@ -18,5 +18,12 @@
 
 ::placeholder {
     font-weight: 600;
-    color: rgba( 255, 255, 255, .7);
+    color: rgba( 255, 255, 255);
+    opacity: 0.3;
+}
+
+::-ms-input-placeholder {
+    font-weight: 600;
+    color: rgba( 255, 255, 255);
+    opacity: 0.3;
 }
