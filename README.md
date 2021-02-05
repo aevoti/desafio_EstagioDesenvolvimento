@@ -6,8 +6,10 @@ Implementação do desafio, que consiste em uma página WEB para exibição de d
 	*  `npm install`
 	* crie um arquivo **.env** com **ACCESS_KEY=API_KEY** e **DB_URI=MONGO_DB_URI**
 	* `node server.js`
+	
 * No diretório **/App**
 	* `npm install`
 	* `npm run start`
+	
 * No browser
 	* `acessar localhost:3000`
