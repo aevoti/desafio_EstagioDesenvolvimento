@@ -13,6 +13,9 @@ import HomePanel from './pages/HomePanel';
 import HistoryPanel from './pages/HistoryPanel';
 import HistoryTableRow from './components/HistoryTableRow';
 
+const serverURL = 'http://localhost:8080';
+const apiURL = 'http://api.weatherstack.com/current';
+
 function App() {
     const [cityName, setCity] = useState('');
     const [regionName, setRegion] = useState('');
@@ -35,9 +38,7 @@ function App() {
 
     const searchWeather = (e, city, region) => {
         e.preventDefault();
-        const url = `http://api.weatherstack.com/current`;
-
-        axios.get('http://localhost:8080/key')
+        axios.get(`${serverURL}/key`)
         .then(res => res.data)
         .then(data => ({
                 access_key: data.accessKey,
@@ -45,7 +46,7 @@ function App() {
             })
         )
         .then(params => {
-            axios.get(url, { params })
+            axios.get(apiURL, { params })
             .then(res => {
                 if(res.data.success === false) {
                     setRedirect('/erro')
@@ -60,7 +61,7 @@ function App() {
     }
 
     const fetchHistory = () => {
-        axios.get('http://localhost:8080/weather')
+        axios.get(`${serverURL}/weather`)
         .then(res => { 
             setWeatherHistory([...res.data]);
         })
@@ -79,11 +80,11 @@ function App() {
             localtime: location.localtime_epoch
         }
 
-        axios.post('http://localhost:8080/weather', { data: doc })
+        axios.post(`${serverURL}/weather`, { data: doc })
     }
 
     const deleteHistory = id => {
-        axios.delete(`http://localhost:8080/weather/${id}`)
+        axios.delete(`${serverURL}/weather/${id}`)
         .then(res => fetchHistory())
     }
 
