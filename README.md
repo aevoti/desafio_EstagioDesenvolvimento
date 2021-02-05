@@ -3,13 +3,13 @@ Implementação do desafio, que consiste em uma página WEB para exibição de d
 
 ## Rodando o projeto
 * No diretório **/server**
-	*  `npm install`
+	*  npm install
 	* crie um arquivo **.env** com **ACCESS_KEY=API_KEY** e **DB_URI=MONGO_DB_URI**
-	* `node server.js`
+	* node server.js
 	
 * No diretório **/App**
-	* `npm install`
-	* `npm run start`
+	* npm install
+	* npm run start
 	
 * No **browser**
-	* `acessar localhost:3000`
+	* acessar localhost:3000
