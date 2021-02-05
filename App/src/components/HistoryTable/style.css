@@ -1,9 +1,9 @@
 .history {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
     color: #fff;
     padding: 5px;
+    text-align: center;
     font-size: .8em;
 }
 
