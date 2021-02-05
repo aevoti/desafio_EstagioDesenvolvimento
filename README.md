@@ -11,5 +11,5 @@ Implementação do desafio, que consiste em uma página WEB para exibição de d
 	* `npm install`
 	* `npm run start`
 	
-* No browser
+* No **browser**
 	* `acessar localhost:3000`
