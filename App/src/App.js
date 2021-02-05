@@ -82,9 +82,14 @@ function App() {
         axios.post('http://localhost:8080/weather', { data: doc })
     }
 
+    const deleteHistory = id => {
+        axios.delete(`http://localhost:8080/weather/${id}`)
+        .then(res => fetchHistory())
+    }
+
     const city = { name: cityName, handleCityInput };
     const region = { name: regionName, handleRegionInput }
-    const rows = weatherHistory.map(e => <HistoryTableRow key={e._id} element={e.data} />)
+    const rows = weatherHistory.map(e => <HistoryTableRow key={e._id} element={e.data} delete={() => deleteHistory(e._id)} />)
     
     return (
         <Router>
