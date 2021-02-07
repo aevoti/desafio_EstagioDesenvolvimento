@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --primary-color:  #16394c;
+    --secondary-color: #608094;
+    --gradient-color-one:  #174f6d;
+    --gradient-color-two:  #1b5f83;
+    --gradient-color-three: #2479a7;
+}

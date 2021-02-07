@@ -1,0 +1,17 @@
+.panel-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.location {
+    font-size: 1.6em;
+}
+
+.date {
+    font-size: .85em;
+    margin-right: 2em;
+}

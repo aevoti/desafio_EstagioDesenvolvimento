@@ -1,0 +1,29 @@
+.search input {
+    margin-right: 10px;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: .5em;
+    font-size: 1em;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 2px;
+    text-indent: .6em;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: rgba( 255, 255, 255);
+    opacity: 0.3;
+}
+
+::-ms-input-placeholder {
+    font-weight: 600;
+    color: rgba( 255, 255, 255);
+    opacity: 0.3;
+}

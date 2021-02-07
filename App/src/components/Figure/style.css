@@ -1,0 +1,16 @@
+.weather-icon {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.weather-icon img {
+    width: 160px;
+    height: 160px;
+}
+
+.weather-icon figcaption {
+    margin-bottom: 40px;
+    font-size: 1.4em;
+}
