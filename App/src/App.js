@@ -5,13 +5,14 @@ import axios from 'axios';
 import './style.css';
 import './global.css';
 
+//imports de componentes de páginas
 import SearchWeather from './components/SearchWeather';
 import Header from './components/Header';
+import HistoryTableRow from './components/HistoryTableRow';
 import WeatherPanel from './pages/WeatherPanel';
 import ErrorPanel from './pages/ErrorPanel';
 import HomePanel from './pages/HomePanel';
 import HistoryPanel from './pages/HistoryPanel';
-import HistoryTableRow from './components/HistoryTableRow';
 
 const serverURL = 'http://localhost:8080';
 const apiURL = 'http://api.weatherstack.com/current';
@@ -21,11 +22,11 @@ function App() {
     const [regionName, setRegion] = useState('');
     const [location, setLocation] = useState({});
     const [current, setCurrent] = useState({});
-    const [redirect, setRedirect] = useState(null);
+    const [redirect, setRedirect] = useState(null); //define a página em que o aplicativo deve estar
     const [weatherHistory, setWeatherHistory] = useState([]);
 
-    useEffect(() => {
-        setRedirect(null);
+    useEffect(() => {//atualiza o redirect para null após o redirecionamento
+        setRedirect(null); 
     }, [redirect])
 
     const handleCityInput = e => { //Atualiza o input City
@@ -118,7 +119,7 @@ function App() {
     )
 }
 
-function returnDoc(location, current) {
+function returnDoc(location, current) { //retorna um documento com a estrutura correta para envio ao banco de dados.
     return {
         city: location.name,
         region: location.region,
