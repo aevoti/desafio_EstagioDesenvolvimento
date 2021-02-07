@@ -1,0 +1,3 @@
+[submodule "know_weather"]
+	path = know_weather
+	url = https://github.com/NormanFrieman/know_weather.git
