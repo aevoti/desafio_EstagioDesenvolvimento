@@ -28,15 +28,15 @@ function App() {
         setRedirect(null);
     }, [redirect])
 
-    const handleCityInput = e => {
+    const handleCityInput = e => { //Atualiza o input City
         setCity(e.target.value)
     }
 
-    const handleRegionInput = e => {
+    const handleRegionInput = e => { //Atualiza o input Region
         setRegion(e.target.value)
     }
 
-    const searchWeather = (e, city, region) => {
+    const searchWeather = (e, city, region) => { //busca dados na API
         e.preventDefault();
         axios.get(`${serverURL}/key`)
         .then(res => res.data)
@@ -60,37 +60,28 @@ function App() {
         })
     }
 
-    const fetchHistory = () => {
+    const fetchHistory = () => { //busca dados do banco de dados no servidor local
         axios.get(`${serverURL}/weather`)
         .then(res => { 
             setWeatherHistory([...res.data]);
         })
     }
 
-    const post = (location, current) => {
-        const doc = {
-            city: location.name,
-            region: location.region,
-            country: location.country,
-            temperature: current.temperature,
-            desc: current.weather_descriptions,
-            wind: current.wind_speed,
-            precip: current.precip,
-            pressure: current.pressure,
-            localtime: location.localtime_epoch
-        }
-
+    const post = (location, current) => { //envia dados pro DB
+        const doc = returnDoc(location, current)
         axios.post(`${serverURL}/weather`, { data: doc })
     }
 
-    const deleteHistory = id => {
+    const deleteHistory = id => { //deleta algum dado do DB
         axios.delete(`${serverURL}/weather/${id}`)
         .then(res => fetchHistory())
     }
 
     const city = { name: cityName, handleCityInput };
     const region = { name: regionName, handleRegionInput }
-    const rows = weatherHistory.map(e => <HistoryTableRow key={e._id} element={e.data} delete={() => deleteHistory(e._id)} />)
+    const rows = weatherHistory.map(e => ( //retorna as rows da tabela de histórico de pesquisa
+        <HistoryTableRow key={e._id} element={e.data} delete={() => deleteHistory(e._id)} />
+        ))
     
     return (
         <Router>
@@ -125,6 +116,20 @@ function App() {
             </div>
         </Router>
     )
+}
+
+function returnDoc(location, current) {
+    return {
+        city: location.name,
+        region: location.region,
+        country: location.country,
+        temperature: current.temperature,
+        desc: current.weather_descriptions,
+        wind: current.wind_speed,
+        precip: current.precip,
+        pressure: current.pressure,
+        localtime: location.localtime_epoch
+    }
 }
 
 ReactDOM.render(<App/>, document.getElementById('app'));
