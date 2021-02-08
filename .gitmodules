@@ -1,0 +1,3 @@
+[submodule "weatherang-frontend"]
+	path = weatherang-frontend
+	url = https://github.com/cainajuca/weatherang-frontend.git
