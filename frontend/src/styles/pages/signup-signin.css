@@ -1,0 +1,24 @@
+.signup-signin-container {
+  height: 100vh;
+  max-width: 320px;
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-signin-container h1,
+.signup-signin-container h4 {
+  color: #fff;
+}
+
+.signup-signin-container form {
+  margin: 32px 0 24px 0;
+}
+
+.signup-signin-container form input {
+  margin-bottom: 16px;
+}
