@@ -1,0 +1,149 @@
+<div class="m-3" *ngFor="let weather of historicoPesquisa">
+  <mat-accordion>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{weather.location_name}} / {{weather.location_country}}
+        </mat-panel-title>
+        <mat-panel-description>
+          Searched on: {{weather.register_local_date}}
+        </mat-panel-description>
+        <button class="btn btn-primary">Click to see details</button>
+      </mat-expansion-panel-header>
+
+      <mat-card class="exibe-info-clima" fxFlex="0 1 calc(40% - 11px)" fxFlex.lt-md="0 1 calc(50% - 11px)"
+        fxFlex.lt-sm="100%">
+        <mat-card-header fxLayout="column" fxLayoutAlign="center center">
+          <mat-card-title>{{weather.location_name}}</mat-card-title>
+          <mat-card-subtitle>{{weather.location_country}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+              <div>
+                <img src={{weather.current_weather_icons}} alt="..." class="rounded">
+                <div *ngIf="weather.current_is_day=='yes'; then day; else night">
+                </div>
+
+                <ng-template #day>
+                  <div>
+                    Day time
+                  </div>
+                </ng-template>
+
+                <ng-template #night>
+                  <div>
+                    Night time
+                  </div>
+                </ng-template>
+
+              </div>
+
+              <div class="weather-description">
+                <!--
+                    <div *ngFor="let weather_description of weather.current_weather_descriptions">
+                      {{weather_description}}
+                    </div>
+                    -->
+                {{weather.current_weather_descriptions}}
+              </div>
+            </div>
+
+            <div class="temperature">
+              <div>
+                Temperature: {{weather.current_temperature}}
+              </div>
+              <div>
+                RealFeel: {{weather.current_feelslike}}
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="mt-3" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+
+            <div class="more-info">
+              <div>
+                Cloud Cover: {{weather.current_cloudcover}}
+              </div>
+              <div>
+                Visibility: {{weather.current_visibility}}
+              </div>
+              <div>
+                UV Index: {{weather.current_uv_index}}
+              </div>
+            </div>
+
+            <div class="more-info-2">
+              <div>
+                Pressure: {{weather.current_pressure}}
+              </div>
+              <div>
+                Precipitation: {{weather.current_precip}}
+              </div>
+              <div>
+                Humidity: {{weather.current_humidity}}
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-3" fxLayout="row" fxLayoutAlign="start end" fxLayoutGap="20px">
+
+            <div class="wind">
+              <div>
+                Wind Speed: {{weather.current_wind_speed}}
+              </div>
+              <div>
+                Wind Degree: {{weather.current_wind_degree}}
+              </div>
+              <div>
+                Wind Direction: {{weather.current_wind_dir}}
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-3" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+            <div class="location-info" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+              <div class="local-area" fxLayout="column" fxLayoutAlign="center center">
+                <div>
+                  {{weather.location_name}} / {{weather.location_country}}
+                </div>
+                <div>
+                  Region: {{weather.location_region}}
+                </div>
+                <div>
+                  Latitude: {{weather.location_lat}} / Longitude: {{weather.location_lon}}
+                </div>
+              </div>
+
+              <div class="local-time" fxLayout="column" fxLayoutAlign="center center">
+                <div>
+                  Local Time: {{weather.location_localtime}}
+                </div>
+                <div>
+                  Time Zone: {{weather.location_timezone_id}} ({{weather.location_utc_offset}})
+                </div>
+              </div>
+
+              <div class="time-collected" fxLayout="column" fxLayoutAlign="center center">
+                <div>
+                  UTC Time Weather data was collected: {{weather.current_observation_time}}
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

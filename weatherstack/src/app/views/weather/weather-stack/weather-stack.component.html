@@ -1,0 +1,156 @@
+
+<!-- Coleta local a pesquisar o clima -->
+<form class="m-3" #searchForm="ngForm" novalidate (ngSubmit)="searchWeather(searchForm)">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" required name="searchValue" ngModel>
+  </div>
+  <button class="btn btn-primary m-2" type="submit">Check Weather</button>
+</form>
+
+
+<!--
+  Exibe informações da pesquisa de clima:
+    - Se nada foi pesquisado, não há informação nem de clima nem de erro para exibir, logo nada é exibido até uma pesquisa ser feita.
+    - Se der algum erro na pesquisa do clima, exibe o erro.
+    - Se achar a infromação do clima, exibe a mesma.
+-->
+<ng-container class="cards-personalizado" *ngIf="thereIsWeather || thereIsError">
+  <!-- Se tiver erro -->
+  <div *ngIf="thereIsError">
+    {{errorMsg}}
+  </div>
+  <!-- Se achar a informação do clima -->
+  <div *ngIf="thereIsWeather" fxLayout="row wrap" fxLayoutAlign="center center" class="">
+    <mat-card class="exibe-info-clima" fxFlex="0 1 calc(40% - 11px)" fxFlex.lt-md="0 1 calc(50% - 11px)"
+      fxFlex.lt-sm="100%"> <!-- Ajusta ao tamanho da tela -->
+      <mat-card-header fxLayout="column" fxLayoutAlign="center center">
+        <mat-card-title>{{weather.location.name}}</mat-card-title>
+        <mat-card-subtitle>{{weather.location.country}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+            <div>
+              <!-- ícones do clima vem em um array. Exibindo todos os ícones de clima -->
+              <div *ngFor="let weather_icon of weather.current.weather_icons">
+                <img src={{weather_icon}} alt="..." class="rounded">
+              </div>
+              <div *ngIf="weather.current.is_day=='yes'; then day; else night">
+              </div> <!-- Exibe se era dia ou onite quando a informação do clima foi coletada -->
+
+              <ng-template #day> <!-- Se era dia -->
+                <div>
+                  Day time
+                </div>
+              </ng-template>
+
+              <ng-template #night> <!-- Se era noite -->
+                <div>
+                  Night time
+                </div>
+              </ng-template>
+
+            </div>
+
+            <div class="weather-description">
+              <div *ngFor="let weather_description of weather.current.weather_descriptions">
+                {{weather_description}}
+              </div>
+            </div>
+          </div>
+
+          <div class="temperature">
+            <div>
+              Temperature: {{weather.current.temperature}}
+            </div>
+            <div>
+              RealFeel: {{weather.current.feelslike}}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-3" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+
+          <div class="more-info">
+            <div>
+              Cloud Cover: {{weather.current.cloudcover}}
+            </div>
+            <div>
+              Visibility: {{weather.current.visibility}}
+            </div>
+            <div>
+              UV Index: {{weather.current.uv_index}}
+            </div>
+          </div>
+
+          <div class="more-info-2">
+            <div>
+              Pressure: {{weather.current.pressure}}
+            </div>
+            <div>
+              Precipitation: {{weather.current.precip}}
+            </div>
+            <div>
+              Humidity: {{weather.current.humidity}}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-3" fxLayout="row" fxLayoutAlign="start end" fxLayoutGap="20px">
+
+          <div class="wind">
+            <div>
+              Wind Speed: {{weather.current.wind_speed}}
+            </div>
+            <div>
+              Wind Degree: {{weather.current.wind_degree}}
+            </div>
+            <div>
+              Wind Direction: {{weather.current.wind_dir}}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-3" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+          <div class="location-info" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+            <div class="local-area" fxLayout="column" fxLayoutAlign="center center">
+              <div>
+                {{weather.location.name}} / {{weather.location.country}}
+              </div>
+              <div>
+                Region: {{weather.location.region}}
+              </div>
+              <div>
+                Latitude: {{weather.location.lat}} / Longitude: {{weather.location.lon}}
+              </div>
+            </div>
+
+            <div class="local-time" fxLayout="column" fxLayoutAlign="center center">
+              <div>
+                Local Time: {{weather.location.localtime}}
+              </div>
+              <div>
+                Time Zone: {{weather.location.timezone_id}} ({{weather.location.utc_offset}})
+              </div>
+            </div>
+
+            <div class="time-collected" fxLayout="column" fxLayoutAlign="center center">
+              <div>
+                UTC Time Weather data was collected: {{weather.current.observation_time}}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</ng-container>
