@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block home %}
+    <a href="{% url 'index' %}">Home</a> 
+{% endblock %}
+
+{% block history %}
+    <a  href="{% url 'search_history' %}">Searchs</a>
+{% endblock %}
+
+
+{%block content%}
+    <i class="fas fa-exclamation-triangle fa-2x"></i> 
+    <h1>{{form}}</h1>
+{%endblock content%}
