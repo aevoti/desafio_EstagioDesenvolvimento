@@ -1,0 +1,85 @@
+
+/* Body */
+body {
+    margin: 0;
+    background-color:rgb(100, 198, 237);
+}
+
+/* Navegation */
+#Navegation {
+    background-color: #e3f2fd;
+    overflow: hidden;
+}
+
+#Navegation i {
+    margin-left: 2px; 
+    margin-top: 2px;
+}
+
+#Navegation form {
+    margin-right:15px;
+}
+
+
+  
+/* Style the links inside the navigation bar */
+#Navegation a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#Navegation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+#Navegation a.active {
+    background-color: rgb(100, 198, 237);
+    color: black;
+}
+
+/* Main */
+.Main {
+    text-align: center; 
+    margin-top:20px;
+}
+
+
+/* Content*/
+.Content{
+    font-size: 25px; 
+    margin-top: 10px;
+}
+
+.Content .row {
+    margin-top: 15px;
+}
+
+#Table {
+    font-size: 20px;
+    width: 100%;
+
+}
+
+.Paginator {
+    margin-bottom: 20px;
+
+}
+
+.Paginator #previous {
+    position: relative; 
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.Paginator #pages {
+    margin-left: 5px ; 
+    margin-right: 5px
+}
+
