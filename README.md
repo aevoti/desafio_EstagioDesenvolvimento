@@ -19,7 +19,7 @@ Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você
 
 - Selecionar um dos pokemons listados para ver informações detalhadas(Informações detalhadas vem de outra requisicão na API);
 
-- Realizar a soma de todos status do pokemon selecionado e exibir esse valor;<br>
+- Realizar a soma de todos status(Atributo base_stats que fica dentro de stats)  do pokemon selecionado e exibir esse valor;<br>
 
 Exemplo: uma chamada da API para trazer 151 pokemons 
 https://pokeapi.co/api/v2/pokemon/?limit=151
@@ -29,7 +29,7 @@ https://pokeapi.co/api/v2/pokemon/4/
 
 
 *Bonus/Extra*
-- Selecionar dois pokemons e exibir qual dos dois tem a soma de status maior;<br>
+- Selecionar dois pokemons e exibir qual dos dois tem a soma de status(Atributo base_stats que fica dentro de stats)  maior;<br>
 
 ## O que será avaliado?
 - Como executa operações que envolvem array/lista;
