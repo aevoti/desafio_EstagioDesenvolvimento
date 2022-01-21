@@ -51,7 +51,7 @@ Você poderá:
 ou  
 - Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 03/02/2022 às 23h59. <br>
 
-Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.perdroni@aevo.com.br!
+Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.pedroni@aevo.com.br!
 
 O nosso Time de Pessoas e Cultura se encontra também à disposição para quaisquer outras questões que achar relevante. Basta nos contatar no e-mail: rh@aevo.com.br!
 
