@@ -1,17 +1,14 @@
 # Desafio Final: Estágio em Desenvolvimento na AEVO
 
-Olá candidato,![alt text](https://static.wikia.nocookie.net/pokemongo/images/c/cd/Sticker_Funwari_Charmander.png/revision/latest?cb=20200817175607)
+Olá candidato(a),![alt text](https://static.wikia.nocookie.net/pokemongo/images/c/cd/Sticker_Funwari_Charmander.png/revision/latest?cb=20200817175607)
 
-Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma jornada seletiva de altíssimo nível, mas você brilhou em cada etapa e não temos dúvidas de que fará isso mais uma vez!<br>
-Abaixo, você encontrará todos as informações necessárias para iniciar o seu desafio final.
+Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma Jornada Seletiva de altíssimo nível, mas o seu cadastro se destacou e não temos dúvidas de que você pode ser a pessoa certa para compor o nosso time.<br><br>
+Abaixo, você encontrará todos as informações necessárias para realizar a sua Etapa de Task.<br>
 
 ## Visão Geral - O que é esperado?
 Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em desenvolvimento WEB! <br>
-Como desafio, é esperado que você desenvolva uma página WEB  para a exibição de uma lista de Pokemons e seja possivel selecionar 1 para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br>
-Não esperamos um sistema completo com persistencia de dados! Porém, caso você o faça, será um diferencial!<br><br>
-
-Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado para a confecção da página (Utilização de Angular 2+ será um diferencial)<br>
-Será necessário a confecção de um back-end para a minha página, para persistir os dados? Não! Mas também será um diferencial! <br>
+É esperado que você desenvolva uma página WEB para a exibição de uma lista de Pokémons e que seja possível selecionar um (1) para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br><br>
+Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado(a) para a confecção da página.<br>
 
 ## Requisitos
 - Explorar a Documentação da API (https://pokeapi.co/docs/v2), para detalhes de utilização; 
@@ -50,11 +47,15 @@ Nenhum framework é exigido para a confecção da página!<br>
 
 ### Como serei avaliado?
 Você poderá:
-- efetuar um pull request da sua implementação diretamente no Github até a data limite de XX/XX/2022 <br>
+- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 03/02/2022 às 23h59; <br>
 ou  
-- encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de XX/XX/2022. <br>
+- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 03/02/2022 às 23h59. <br>
 
-Qualquer problema ou dificuldade com o repositório ou a API PokeAPI, você pode entrar em contato conosco pelos e-mails, carlos.pedroni@aevo.com.br ou rh@aevo.com.br para que possamos sanar todas as dúvidas!
+Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.perdroni@aevo.com.br!
 
-Estamos sempre em busca de melhoria, por isso, caso tenha alguma sugestão fique à vontade pra compartilhar conosco! Boa sorte! 🧡 ![alt text](https://static.wikia.nocookie.net/pokemongo/images/a/af/Sticker_Funwari_Bulbasaur_bye.png/revision/latest?cb=20200825201636)
+O nosso Time de Pessoas e Cultura se encontra também à disposição para quaisquer outras questões que achar relevante. Basta nos contatar no e-mail: rh@aevo.com.br!
+
+Estes canais de comunicação estarão sempre abertos para você, não hesite em nos contatar caso tenha dúvidas.
+
+Boa sorte! 🧡 ![alt text](https://static.wikia.nocookie.net/pokemongo/images/a/af/Sticker_Funwari_Bulbasaur_bye.png/revision/latest?cb=20200825201636)
 
