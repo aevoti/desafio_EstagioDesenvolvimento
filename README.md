@@ -1,61 +1,32 @@
-# Desafio Final: Estágio em Desenvolvimento na AEVO
+<center>
+    <img src=".\PokeSite\img\pokesite.png"></img>
+    &nbsp
+    <p>Site de Listagem de Pokémons</p>
+</center>
+<center>
+&nbsp
+ <img src=".\PokeSite\img\pokesiteVideo.gif"></img>
+</center>
 
-Olá candidato(a),![alt text](https://static.wikia.nocookie.net/pokemongo/images/c/cd/Sticker_Funwari_Charmander.png/revision/latest?cb=20200817175607)
+## 💻 Projeto
+Desenvolver uma plataforma web para listagem e visualização de pokémons e suas características.
 
-Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma Jornada Seletiva de altíssimo nível, mas o seu cadastro se destacou e não temos dúvidas de que você pode ser a pessoa certa para compor o nosso time.<br><br>
-Abaixo, você encontrará todos as informações necessárias para realizar a sua Etapa de Task.<br>
+Para a contrução desse projeto foram ultilizados HTML, CSS e JavaScript. Todos os dados sobre os Pokémons como o nome, número, tipo, imagem e os atributos, foram retirados da API <a href="https://pokeapi.co/docs/v2">Pokéapi.</a>
 
-## Visão Geral - O que é esperado?
-Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em desenvolvimento WEB! <br>
-É esperado que você desenvolva uma página WEB para a exibição de uma lista de Pokémons e que seja possível selecionar um (1) para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br><br>
-Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado(a) para a confecção da página.<br>
+## ⚙️ Funcionalidades
+<input type="checkbox" checked="checked"> Navegação entre páginas por meio de um botão</input>
 
-## Requisitos
-- Explorar a Documentação da API (https://pokeapi.co/docs/v2), para detalhes de utilização; 
+<input type="checkbox" checked="checked"> Visualizar a Listagem dos 150 primeiros pokémons na página Pokédex</input>
 
-- Elaborar uma página para consultar e exibir as informações(lista de pokemons) da requisição da API na página;
+<input type="checkbox" checked="checked">  Ao posicionar o cursor do mouse sobre uma carta de pokémon  poderá visualizar os atributos, assim com o "poder" do Pokémon (definido pela soma dos atributos)</input>
 
-- Adicionar um input na página para permitir buscas;
+<input type="checkbox" checked="checked">  Ao inserir um nome do pokémon (nome em inglês) na barra de pesquisa o site retornará o Pokémon pesquisado assim com todas as suas características</input>
 
-- Selecionar um dos pokemons listados para ver informações detalhadas(Informações detalhadas vem de outra requisicão na API);
+## 💡 Linguagens e tecnologias
+- <a href="https://devdocs.io/html/"> HTML</a>
 
-- Realizar a soma de todos status(Atributo base_stats que fica dentro de stats)  do pokemon selecionado e exibir esse valor;<br>
+- <a href="https://devdocs.io/css/">CSS</a>
 
-Exemplo: uma chamada da API para trazer 151 pokemons 
-https://pokeapi.co/api/v2/pokemon/?limit=151
+- <a href="https://devdocs.io/javascript/"> JavaScript</a>
 
-Exemplo: uma chamada da API para trazer mais informações do pokemon 4 - Charmander
-https://pokeapi.co/api/v2/pokemon/4/
-
-
-*Bonus/Extra*
-- Selecionar dois pokemons e exibir qual dos dois tem a soma de status(Atributo base_stats que fica dentro de stats)  maior;<br>
-
-## O que será avaliado?
-- Como executa operações que envolvem array/lista;
-- Forma que as requisições são feitas;
-- Estrutura do projeto;
-- Noções basicas de Desenvolvimento Web(Html, css...); 
-
-### Observações importantes:
-Nenhum framework é exigido para a confecção da página!<br>
-
-- Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
-- Será considerado um diferencial um layout criativo e com uma boa usabilidade.<br>
-- Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
-- Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
-
-### Como serei avaliado?
-Você poderá:
-- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 03/02/2022 às 23h59; <br>
-ou  
-- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 03/02/2022 às 23h59. <br>
-
-Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.pedroni@aevo.com.br!
-
-O nosso Time de Pessoas e Cultura se encontra também à disposição para quaisquer outras questões que achar relevante. Basta nos contatar no e-mail: rh@aevo.com.br!
-
-Estes canais de comunicação estarão sempre abertos para você, não hesite em nos contatar caso tenha dúvidas.
-
-Boa sorte! 🧡 ![alt text](https://static.wikia.nocookie.net/pokemongo/images/a/af/Sticker_Funwari_Bulbasaur_bye.png/revision/latest?cb=20200825201636)
-
+- <a href="https://pokeapi.co/docs/v2"> APi Pokéapi</a>
