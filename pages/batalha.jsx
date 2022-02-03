@@ -238,7 +238,9 @@ export async function getStaticProps() {
   // ESSA FORMA DE MONTAR UM NOVO JSON NÃO E PERFORMATICA POREM ACREDITO QUE CUMPRA O OBJETIVO DA TASK
   // DESSA FORMA IMPLEMENTAR A BATALHA FICA BEM SIMPLES POIS TENHO O CONTROLE DA FORMA QUE O JSON E MONTADO
   
-  const ServiceApi = new ConexaoApi(process.env.BASE_URL_ENV_DEV);
+    // const ServiceApi = new ConexaoApi(process.env.BASE_URL_ENV_DEV); // Puxa do env local
+    const ServiceApi = new ConexaoApi('https://pokeapi.co/api/v2/pokemon'); // Para deploy Heroku
+
   const Dados = [];
 
   //BUSCA OS DADOS DO PRIMEIRO JSON PARA BUSCA OS DADOS DE CADA POKEMON E MONTAR UM NOVO JSON
