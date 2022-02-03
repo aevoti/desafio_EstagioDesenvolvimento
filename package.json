@@ -2,10 +2,11 @@
   "name": "pokesam",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+      "dev": "next dev -p 7000",
+      "build": "next build",
+      "start": "next start -p $PORT",
+      "heroku-postbuild": "npm run build",
+      "lint": "next lint"
   },
   "dependencies": {
     "@sl-codeblaster/react-3d-animated-card": "^1.0.8",
