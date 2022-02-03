@@ -47,7 +47,7 @@ export default function Batalha({ API, jSONPersonalizado }) {
             return (
                 <div className="country-item country-item-value">
                     <img alt={option.name} src={`${option.imgSVG}`}
-                        onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}
+                        onError={(e) => e.target.src = ''}
                         className={`flag flag-${option.name.toLowerCase()}`} />
                     <div>{option.name}</div>
                 </div>
@@ -66,7 +66,7 @@ export default function Batalha({ API, jSONPersonalizado }) {
         return (
             <div className="country-item">
                 <img alt={option.name} src={`${option.imgSVG}`}
-                    onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}
+                    onError={(e) => e.target.src = ''}
                     className={`flag flag-${option.name.toLowerCase()}`} />
                 <div>{option.name}</div>
             </div>
@@ -98,7 +98,7 @@ export default function Batalha({ API, jSONPersonalizado }) {
             return (
                 <div className="country-item country-item-value">
                     <img alt={option.name} src={`${option.imgSVG}`}
-                        onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}
+                        onError={(e) => e.target.src = ''}
                         className={`flag flag-${option.name.toLowerCase()}`} />
                     <div>{option.name}</div>
                 </div>
@@ -117,13 +117,15 @@ export default function Batalha({ API, jSONPersonalizado }) {
         return (
             <div className="country-item">
                 <img alt={option.name} src={`${option.imgSVG}`}
-                    onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'}
+                    onError={(e) => e.target.src = ''}
                     className={`flag flag-${option.name.toLowerCase()}`} />
                 <div>{option.name}</div>
             </div>
         );
     }
 
+    // FUNÇÃO QUE REALIZA A SOMA DE TODAS AS HABILIDADES E MONSTRA A COM MAIOR VALOR
+    // CLARO AQUI DA PRA OTIMIZAR E MUITO MAIS FOI APENAS PARA APLICAÇÃO RAPIDA E LOGICA EXTREMA SIMPLES    
     function RealizaBatalha() {
         const pegaValorHabilidadePrimeiro = [DadosParaOPrimeiroSelect].map(ev => ev)
         const primeiro = pegaValorHabilidadePrimeiro[0].forca.reduce((total, valor) => total + valor.valor, 0);
@@ -265,7 +267,7 @@ export async function getStaticProps() {
     }
   }
 
-  console.log("==================== getStaticProps foi iniciado ======================");
+  console.log("==================== getStaticProps foi iniciado /Batalha ======================");
 
   //RECEBE A URL DE CADA POKEMON E RETORNA O JSON DE CADA UM
   //SEI QUE COM ISSO E FEITO MUITAS MUITAS REQUISIÇOES MAIS POR ISSO COLOQUEI NO GETSTATIC

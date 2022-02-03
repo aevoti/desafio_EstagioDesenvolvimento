@@ -167,7 +167,7 @@ export async function getStaticProps() {
     }
   }
 
-  console.log("==================== getStaticProps foi iniciado ======================");
+  console.log("==================== getStaticProps foi iniciado /index ======================");
 
   //RECEBE A URL DE CADA POKEMON E RETORNA O JSON DE CADA UM
   //SEI QUE COM ISSO E FEITO MUITAS MUITAS REQUISIÇOES MAIS POR ISSO COLOQUEI NO GETSTATIC

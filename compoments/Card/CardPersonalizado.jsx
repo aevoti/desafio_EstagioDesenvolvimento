@@ -49,7 +49,7 @@ export function CardPersonalizado({ nomePokemon,
 
     return (
         <>
-            <div style={{ marginTop: '50px', marginLeft: '4rem' }} >
+            <div style={{ marginTop: '50px' }} >
                 <a onClick={() => DadosPokemParaModal()} >
                     {/* <a onClick={() => console.log(nomePokemon)}> */}
                     <StyleCard>
