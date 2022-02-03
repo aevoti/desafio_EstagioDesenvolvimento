@@ -1,61 +1,34 @@
-# Desafio Final: Estágio em Desenvolvimento na AEVO
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Olá candidato(a),![alt text](https://static.wikia.nocookie.net/pokemongo/images/c/cd/Sticker_Funwari_Charmander.png/revision/latest?cb=20200817175607)
+## Getting Started
 
-Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma Jornada Seletiva de altíssimo nível, mas o seu cadastro se destacou e não temos dúvidas de que você pode ser a pessoa certa para compor o nosso time.<br><br>
-Abaixo, você encontrará todos as informações necessárias para realizar a sua Etapa de Task.<br>
+First, run the development server:
 
-## Visão Geral - O que é esperado?
-Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em desenvolvimento WEB! <br>
-É esperado que você desenvolva uma página WEB para a exibição de uma lista de Pokémons e que seja possível selecionar um (1) para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br><br>
-Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado(a) para a confecção da página.<br>
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Requisitos
-- Explorar a Documentação da API (https://pokeapi.co/docs/v2), para detalhes de utilização; 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Elaborar uma página para consultar e exibir as informações(lista de pokemons) da requisição da API na página;
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-- Adicionar um input na página para permitir buscas;
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-- Selecionar um dos pokemons listados para ver informações detalhadas(Informações detalhadas vem de outra requisicão na API);
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- Realizar a soma de todos status(Atributo base_stats que fica dentro de stats)  do pokemon selecionado e exibir esse valor;<br>
+## Learn More
 
-Exemplo: uma chamada da API para trazer 151 pokemons 
-https://pokeapi.co/api/v2/pokemon/?limit=151
+To learn more about Next.js, take a look at the following resources:
 
-Exemplo: uma chamada da API para trazer mais informações do pokemon 4 - Charmander
-https://pokeapi.co/api/v2/pokemon/4/
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-*Bonus/Extra*
-- Selecionar dois pokemons e exibir qual dos dois tem a soma de status(Atributo base_stats que fica dentro de stats)  maior;<br>
+## Deploy on Vercel
 
-## O que será avaliado?
-- Como executa operações que envolvem array/lista;
-- Forma que as requisições são feitas;
-- Estrutura do projeto;
-- Noções basicas de Desenvolvimento Web(Html, css...); 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Observações importantes:
-Nenhum framework é exigido para a confecção da página!<br>
-
-- Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
-- Será considerado um diferencial um layout criativo e com uma boa usabilidade.<br>
-- Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
-- Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
-
-### Como serei avaliado?
-Você poderá:
-- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 03/02/2022 às 23h59; <br>
-ou  
-- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 03/02/2022 às 23h59. <br>
-
-Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.pedroni@aevo.com.br!
-
-O nosso Time de Pessoas e Cultura se encontra também à disposição para quaisquer outras questões que achar relevante. Basta nos contatar no e-mail: rh@aevo.com.br!
-
-Estes canais de comunicação estarão sempre abertos para você, não hesite em nos contatar caso tenha dúvidas.
-
-Boa sorte! 🧡 ![alt text](https://static.wikia.nocookie.net/pokemongo/images/a/af/Sticker_Funwari_Bulbasaur_bye.png/revision/latest?cb=20200825201636)
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

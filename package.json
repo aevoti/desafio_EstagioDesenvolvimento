@@ -1,0 +1,32 @@
+{
+  "name": "pokesam",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sl-codeblaster/react-3d-animated-card": "^1.0.8",
+    "axios": "^0.25.0",
+    "next": "12.0.8",
+    "primeflex": "^3.1.2",
+    "primeicons": "^5.0.0",
+    "primereact": "^7.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-lottie": "^1.2.3",
+    "react-modal": "^3.14.4",
+    "react-palette": "^1.0.2",
+    "react-spring": "^9.4.2",
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.49.0",
+    "styled-components": "^5.3.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8"
+  }
+}
