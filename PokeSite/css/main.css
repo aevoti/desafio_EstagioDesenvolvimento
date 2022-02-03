@@ -1,0 +1,106 @@
+
+  body {
+    background: #EFEFBB;
+    background:  -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+}
+
+.menu{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+    
+
+}
+
+.SobreImg{
+    
+    width:300px;
+    height: 95px;
+    margin-bottom: 100px;
+    
+}
+
+
+.buttonMenu{
+    align-items: center;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    width: 100;
+    height: 40;
+    font-family: 'Agency FB', arial; 
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+  .pokebola {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #FFF;
+      border: 7px solid #000;
+      border-radius: 50%;
+      box-shadow: inset -10px 10px 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: gira 4s infinite;
+      margin: 20px auto;
+      top: 25%;
+      transform: translateY(-25%); 
+ 
+}
+  .pokebola:before, .pokebola:after {
+      content: "";
+      position: absolute;
+}
+  .pokebola:before {
+      background-color: #EF4036;
+      width: 100%;
+      height: 50%;
+}
+  .pokebola:after {
+      top: calc(50% - 10px);
+      width: 100%;
+      height: 20px;
+      background-color: #000;
+}
+  .pokebola-botao {
+      width: 60px;
+      height: 60px;
+      background-color: #FFF;
+      border: 10px solid #000;
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      z-index: 10;
+}
+  .pokebola-botao:before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+      width: 20px;
+      height: 20px;
+      background-color: #FFF;
+      border: 3px solid #000;
+      border-radius: 50%;
+      z-index: 10;
+}
+  
+  @keyframes gira {
+      0% { transform: rotate(-45deg); }
+      50% { transform: rotate(45deg); }
+      100% { transform: rotate(-45deg); }
+}

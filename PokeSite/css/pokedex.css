@@ -1,0 +1,276 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #EFEFBB;
+    background:  -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Caveat", cursive;
+    margin: 0;
+}
+
+a{
+    margin-top: 2rem;
+}
+
+h2{
+    letter-spacing: 3px;
+    font-family: 'Agency FB', arial; 
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: bold
+}
+.pokedexImg{
+    width:400px;
+    height: 105px;
+}
+.poke_Container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:space-between;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.pokemon{
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.9);
+    border-top: 0.5px solid #bab8b5;
+    border-bottom: 0.5px solid #bab8b5;
+    margin: 10 px;
+    padding: 20 px;
+    text-align: center;
+    font-family: 'Agency FB', arial; 
+    text-shadow: 4px 4px 4px #aaa;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px ;
+    list-style: none;
+    
+    
+}
+  .pokemon .img-container {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    padding-bottom: 10px;
+  
+}
+
+.pokemon .img-container img{
+    margin-top: 20px;
+    max-width: 90%;
+    filter: drop-shadow(0 5px 3px black);
+    width: 500px;
+    position: relative;
+    padding-bottom: 10px;
+    
+    
+}
+.bola{
+    content: "";
+  display: block;
+  width: 80%;
+  height: 57%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  bottom: 10%;
+}
+
+.pokemon .info{
+    margin-top: 20px;
+    background-color: #fff;
+    
+}
+
+.pokemon .number{
+    background-color: white;
+    border-radius: 10px 0 10px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-size: 1em;
+    padding: 5px 10px;
+    
+
+}
+
+.pokemon .name{
+    font-family: 'Agency FB', arial; 
+    text-shadow: 4px 4px 4px #aaa;
+    margin: 15px 0 7px;
+    font-size: 1.5rem;
+    
+}
+
+.pokemon:hover{
+    animation: bouce 0.5 linear;
+}
+
+
+
+.type span{
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: 0.3s ease-in;
+    height: 90%;
+    background-color: #333333;
+    color: black;
+    font-family: 'Agency FB', arial; 
+}
+
+.stats p { 
+    justify-content: space-between;
+}
+
+.pokemon:hover .stats{
+    transform: translateY(0);
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19.3px;
+}
+
+.flex > ul > li::first-letter{
+    text-transform: uppercase;
+}
+.hp{
+	font-family: 'Agency FB', arial;  
+	color: #7aae7c;
+    font-weight: bold;
+    
+    
+    
+}
+
+.attk{
+	font-family: 'Agency FB', arial;  
+	color: #FF6961;
+    font-weight: bold;
+    
+    
+}
+.def{
+	
+	font-family: 'Agency FB', arial;  
+	color: #3065ac;
+    font-weight: bold;
+    
+    
+}
+
+.poder{
+
+    font-family: 'Agency FB', arial;  
+	color: #f78a21;
+    font-weight: bold;
+}
+
+.search{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    margin: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffcb04;
+    border-radius: 50px;
+    line-height: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #3065ac;
+    letter-spacing: 2px;
+    font-family: 'Agency FB', arial; 
+}
+
+.search::placeholder{
+    text-align: center;
+    color: #3065ac;
+    letter-spacing: 2px;
+    font-family: 'Agency FB', arial;
+    border: 1px; 
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water, .ice {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
