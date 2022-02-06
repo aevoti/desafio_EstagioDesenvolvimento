@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./style/style.css">
+
+  <title>AEVOTI Technical Challenge</title>
+</head>
+<body>
+  <div class="container">
+    <div class="display">
+
+      <header class="header">
+        <h1 class="title"> AEVOTI Challenge</h1>
+      </header>
+      
+      <section class="section-search">
+        <div class="data-search">
+          <input type="text"
+          class="input-location"
+          placeholder="City"
+          required>
+          <div class="section-button">
+            <button class="search"> Search</button>
+          </div>
+      </section>
+
+      <section class="section-location">
+        <div class="display-location-time">
+          <div class="location">
+            <span class="city"></span>
+            <span class="country"></span>
+          </div>
+          <div class="time">
+            <span class="localtime"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-weather">
+        <div class="day-weather">
+          <div class="weather-icon-area">
+            <div class="icon-area">
+              <img class="weather-icon"  />
+            </div>
+            <div class="weather-descriptions-area">
+              <p class="weather-descriptions"></p>
+            </div>
+          </div>
+          <div class="temperature-area">
+            <span class="temperature"></span>
+            <span class="unit-temperature"></span>
+          </div>
+        </div>
+      </section>
+
+        <section class="section-outhers-infos">
+          <div class="outhers-data">
+            <div class="wind-speed-area">
+              <div class="icon-descriptions-area">
+                  <i class="fas fa-wind fa-2x"></i>
+                <p class="descriptions">Wind speed</p>
+              </div>
+              <p >
+                <span class="wind-speed"></span>
+                <span class="unit-wind-speed"></span>
+              </p>
+            </div>
+            <div class="precip-area">
+              <div class="icon-descriptions-area">
+                <i class="fas fa-tint fa-2x"></i>
+            <p class="descriptions">Precipitation</p>
+            
+          </div>
+          <p >
+            <span class="precip"></span>
+            <span class="unit-precip"></span>
+          </p>
+        </div>
+        <div class="visibility-area">
+          <div class="icon-descriptions-area">
+            <i class="fas fa-eye fa-2x"></i>
+            <p class="descriptions">Visibility</p>
+          </div>
+          <p >
+            <span class="visibility"></span>
+            <span class="unit-visibility"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
