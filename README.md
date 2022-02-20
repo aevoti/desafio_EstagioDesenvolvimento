@@ -1,6 +1,6 @@
 # [Link da Documentação](https://eggplant-periwinkle-c1b.notion.site/Desafio-Estagio-c48927ae4e344b9e951123dc58866af4)
 
-# POR FAVOR Por conta do grande volume de dados execulte "npm run built" primeiro e depois "npm run start"
+# POR FAVOR Por conta do grande volume de dados execulte "npm run build" primeiro e depois "npm run start"
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
