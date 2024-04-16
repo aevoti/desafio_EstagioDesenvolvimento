@@ -10,6 +10,9 @@ Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em 
 É esperado que você desenvolva uma página WEB para a exibição de uma lista de Pokémons e que seja possível selecionar um (1) para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br><br>
 Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado(a) para a confecção da página.<br>
 
+Caso precise consultar algum material de apoio, recomendamos:<br>
+Para o front: https://www.youtube.com/@loianegroner <br>
+
 ## Requisitos
 - Explorar a Documentação da API (https://pokeapi.co/docs/v2), para detalhes de utilização; 
 
