@@ -1,4 +1,4 @@
-<div class="card__container" (dblclick)="selectPokemon()">
+<div class="card__container" (dblclick)="selectPokemon()"  (touchstart)="selectPokemon()">
   <div class="card__header" *ngIf="pokemon">
     <h2>{{pokemon.name | titlecase}}</h2>
     <button (click)="viewDatail()">Visaulizar {{pokemon.id}}</button>
