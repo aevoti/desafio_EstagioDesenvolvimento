@@ -10,10 +10,11 @@ import { StatusBattleComponent } from './components/status-battle/status-battle.
   declarations: [
     CardComponent,
     PaginationComponent,
+    StatusBattleComponent,
   ],
   imports: [
     CommonModule,
   ],
-  exports: [CardComponent, PaginationComponent]
+  exports: [CardComponent, PaginationComponent, StatusBattleComponent]
 })
 export class SharedModule { }

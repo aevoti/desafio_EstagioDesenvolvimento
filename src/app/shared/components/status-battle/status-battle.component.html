@@ -1,0 +1,45 @@
+<div class="statusbattle__container" title="Fight">
+  <fieldset class="statusbattle__button" (click)="onBattleStart()">
+    <button [disabled]="pokemonBattleList.length < 1">
+      <img [style.opacity]="pokemonBattleList.length < 1 ? '0.5' : '1'" src="assets/img/battle.png" alt="Battle Image">
+      Fight
+    </button>
+  </fieldset>
+  <div class="statusbattle__content">
+    <ng-container *ngIf="winPokemon">
+      <h2>Battle Win 🏆</h2>
+      <div class="statusbattle__card win">
+        <div class="statusbattle__text">
+          <h6>{{winPokemon.name }}</h6>
+          <span>{{winPokemon.stat}}</span>
+        </div>
+        <img [class]="battleMoveLeft" [src]="winPokemon.gif" [alt]="winPokemon.name ">
+      </div>
+
+    </ng-container>
+    <ng-container *ngIf="!winPokemon">
+      <div class="statusbattle__card">
+        <div class="statusbattle__text">
+          <h6>{{pokemonBattleList[0] ? pokemonBattleList[0].name : "" }}</h6>
+          <span>{{pokemonBattleList[0] ? pokemonBattleList[0].stat : ""}}</span>
+        </div>
+        <img [class]="battleMoveRight" [src]="pokemonBattleList[0] ? pokemonBattleList[0].gif: ''"
+          [alt]="pokemonBattleList[0] ? pokemonBattleList[0].name : ''"
+          [srcset]="pokemonBattleList[0] ? '' :imgDefault">
+      </div>
+      <h1>VS</h1>
+      <div class="statusbattle__card">
+        <div class="statusbattle__text">
+          <h6>{{pokemonBattleList[1]? pokemonBattleList[1].name : "" }}</h6>
+          <span>{{pokemonBattleList[1]? pokemonBattleList[1].stat : ""}}</span>
+        </div>
+        <img [class]="battleMoveLeft" [src]="pokemonBattleList[1]? pokemonBattleList[1].gif : ''"
+          [alt]="pokemonBattleList[1]? pokemonBattleList[1].name : ''" [srcset]="pokemonBattleList[1] ? '' :imgDefault">
+      </div>
+    </ng-container>
+
+  </div>
+  <div class="statusbattle__button">
+    <button (click)="onBattleClear()">Limpa</button>
+  </div>
+</div>

@@ -1,0 +1,169 @@
+.statusbattle__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.statusbattle__button {
+  display: flex;
+  gap: 1rem;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 1.4rem;
+  border-radius: 1rem;
+  background-color: var(--primary-200);
+  z-index: 99;
+
+}
+
+.statusbattle__button:hover {
+  filter: brightness(0.9);
+}
+
+.statusbattle__button button {
+  font-family: var(--font-oswald);
+  font-size: 2rem;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.statusbattle__button >button >img {
+  width: 1.8rem;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.statusbattle__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.statusbattle__content > :first-child > :nth-child(2) {
+  transform: scaleX(-1);
+}
+
+.statusbattle__card {
+  background: #fafafa;
+  text-align-last: center;
+  padding: 1rem;
+  width: 16rem;
+  height: 14rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statusbattle__card img{
+  height: 100px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.statusbattle__content h1 {
+  font-size: 8rem;
+  align-content: center;
+  font-family: var(--font-oswald);
+  color: var(--primary-800);
+  letter-spacing: 5px;
+  font-weight: 600;
+  margin: -8rem;
+  z-index: -99;
+}
+
+.statusbattle__content h2 {
+  font-size: 4rem;
+    align-content: center;
+    font-family: var(--font-oswald);
+    color: var(--primary-800);
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin: -8rem;
+}
+
+.statusbattle__text h6 {
+  font-size: 8.rem;
+  color: var(--primary-800);
+}
+.statusbattle__text span {
+  font-size: 8.rem;
+  color: var(--primary-800);
+}
+
+.move__left {
+  animation: pokemon_left 2s ease 0s 1 normal forwards;
+}
+
+.move__right {
+  animation: pokemon_right 2s ease 0s 1 normal forwards;
+}
+
+.win{
+  filter: drop-shadow(0 0 2px rgba(3, 255, 104, 0.5));
+
+}
+.lose{
+  background: red;
+}
+
+@keyframes pokemon_left {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translate(-150px) rotate(4deg);
+  }
+
+  30% {
+    transform: translate(-50px) rotate(4deg);
+  }
+
+  45% {
+    transform: translate(-150px) rotate(4deg);
+  }
+
+  60% {
+    transform: translateY(9px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes pokemon_right {
+
+  0%,
+  100% {
+    transform: scaleX(-1) translate(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: scaleX(-1) translate(-150px) rotate(4deg);
+  }
+
+  30% {
+    transform: scaleX(-1)translate(-50px) rotate(4deg);
+  }
+
+  45% {
+    transform: scaleX(-1) translate(-150px) rotate(4deg);
+  }
+
+  60% {
+    transform: scaleX(-1) translate(9px) rotate(0deg);
+  }
+
+  75% {
+    transform: scaleX(-1) translate(-6px) rotate(1.2deg);
+  }
+}
