@@ -51,7 +51,8 @@ h2 {
   font-size: 1rem;
   color: var(--primary-800);
 }
-.card__header button:hover{
+
+.card__header button:hover {
   outline: 1px solid var(--primary-800);
 }
 
@@ -162,5 +163,9 @@ h2 {
     font-size: .8rem;
     padding: 6px;
   }
-}
 
+  .card__container {
+    height: 28rem;
+
+  }
+}

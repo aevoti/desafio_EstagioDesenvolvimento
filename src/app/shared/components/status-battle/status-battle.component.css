@@ -183,5 +183,8 @@
     letter-spacing: 5px;
     font-weight: 600;
   }
-
+  .statusbattle__content h2{
+    margin: 0;
+    font-size: 2rem;
+  }
 }

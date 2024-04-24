@@ -26,10 +26,6 @@
   rotate: 90deg;
 }
 
-::ng-deep app-card .card__container:hover::before {
-  display: none !important;
-}
-
 .card__container {
   display: flex;
   flex-direction: column;
@@ -150,3 +146,6 @@
   visibility: hidden;
 }
 
+::ng-deep .card__hidden .card__container:hover::before {
+  display: none !important;
+}
