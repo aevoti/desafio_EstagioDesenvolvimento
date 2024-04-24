@@ -83,3 +83,9 @@ app-card{
 .input-container svg {
   stroke: var(--primary-800);
 }
+
+@media (max-width: 425px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,3 +3,9 @@
   display: grid;
   grid-template-columns: 14rem 0fr 1fr;
 }
+
+@media (max-width: 425px) {
+  :host {
+    grid-template-columns: 1fr;
+  }
+}

@@ -146,3 +146,7 @@
 .speed:hover {
   filter: brightness(.9);
 }
+::ng-deep app-card .card__container .card__header > button {
+  visibility: hidden
+}
+

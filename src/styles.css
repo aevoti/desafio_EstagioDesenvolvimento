@@ -110,3 +110,13 @@ time, mark, audio, video {
   font-family: var(--font-lato);
 }
 
+
+@media (max-width: 425px) {
+  html {
+    font-size: 10px;
+  }
+  .statusbattle__card {
+    grid-template-columns: 1fr;
+  }
+
+}

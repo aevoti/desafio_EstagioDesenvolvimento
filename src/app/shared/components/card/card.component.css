@@ -156,3 +156,11 @@ h2 {
 .fairy {
   background-color: #f9aec7;
 }
+
+@media (max-width: 425px) {
+  .card__header button {
+    font-size: .8rem;
+    padding: 6px;
+  }
+}
+

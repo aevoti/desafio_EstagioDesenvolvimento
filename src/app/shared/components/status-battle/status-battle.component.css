@@ -167,3 +167,21 @@
     transform: scaleX(-1) translate(-6px) rotate(1.2deg);
   }
 }
+
+@media (max-width: 1024px) {
+  .statusbattle__card {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .statusbattle__content h1 {
+    font-size: 3rem;
+    margin: 5px;
+    align-content: center;
+    font-family: var(--font-oswald);
+    color: var(--primary-800);
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
+
+}
