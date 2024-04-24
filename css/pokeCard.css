@@ -1,0 +1,80 @@
+#textBox {
+    background-color: rgb(255 255 255 / 25%);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+#textBox h1 {
+    font-size: 26px;
+}
+#textBox h5 {
+    font-size: 19px;
+}
+#pokeBusca {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #444444;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    margin-bottom: 20px;
+}
+
+#pokeTabela {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80vw;
+}
+
+.pokeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 50%);
+    gap: 15px;
+}
+
+.pokeImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.pokeNome {
+    font-size: 18px;
+    color: #333333;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.pokeId {
+    font-size: 14px;
+    color: #666666;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+    align-self: flex-end;
+}
+
+/* Estilizações para o hover do card */
+.pokeCard:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 9px 15px rgb(0 0 0 / 50%);
+}
+
+.pokeCard:hover .pokeImg {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}

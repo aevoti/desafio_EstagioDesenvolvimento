@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Especificação do pokémon</title>
+        <link rel="icon" href="img/pokebola.svg" type="image/svg" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/pokeWiki.css" />
+    </head>
+
+    <body>
+        <header>
+            <button onclick="window.location.href = 'index.html'">
+                Lista de Pokémons de Pokémon
+            </button>
+            <button onclick="ComparaRecebe1()">Comparador de Pokémons</button>
+        </header>
+        <div id="pokemon">
+            <a href="" id="pokeAnterior" class="setaPoke">
+                <img src="img/setaEsquerda.svg" alt="" />
+                <img src="" alt="" id="imgPokeAnt" />
+            </a>
+            <div id="infosPokemon">
+                <div id="imgName">
+                    <img src="" alt="Pokémon" id="imgPokemon" />
+                    <h1 id="nomePoke"></h1>
+                </div>
+                <div id="textBox2">
+                    <div id="medidasPoke">
+                        <h1 id="alturaPoke"></h1>
+                        <h1 id="pesoPoke"></h1>
+                    </div>
+                    <div id="tiposBox">
+                        <h1 style="font-weight: bold;">Tipos:</h1>
+                        <div id="tiposPoke">
+                        </div>
+                    </div>
+                    <div id="habilidadesPoke">
+                        <h1 style="font-weight: bold;">Habilidades:</h1>
+                    </div>
+                </div>
+                <div id="status">
+                    <h1 id="ataque"></h1>
+                    <h1 id="defesa"></h1>
+                    <h1 id="vida"></h1>
+                    <h1 id="ataqueEspecial"></h1>
+                    <h1 id="defesaEspecial"></h1>
+                    <h1 id="velocidade"></h1>
+                    <h1 id="base_stats"></h1>
+                </div>
+            </div>
+            <a href="" id="pokeProximo" class="setaPoke">
+                <img src="img/setaDireita.svg" alt="" />
+                <img src="" alt="" id="imgPokeProx" />
+            </a>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/funções.js"></script>
+        <script src="js/pokeWiki.js"></script>
+    </body>
+</html>
