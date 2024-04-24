@@ -1,0 +1,27 @@
+.pagination__container {
+  margin: 2rem 0;
+  text-align-last: center;
+}
+
+.pagination__container button {
+  margin: 0 5px;
+  padding: .4rem .8rem;
+  background-color: var(--primary-600);
+  color: var(--white);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.pagination__container button:hover {
+  filter: brightness(1.4);
+}
+.pagination__container :nth-child(2) {
+  filter: brightness(1.4);
+}
+
+.pagination__container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,64 +1,79 @@
-# Desafio Final: Estágio em Desenvolvimento na AEVO
+<h1 align="center">
+    <strong> Desafio AEVO</strong>
+</h1>
 
-Olá candidato(a),![alt text](https://static.wikia.nocookie.net/pokemongo/images/c/cd/Sticker_Funwari_Charmander.png/revision/latest?cb=20200817175607)
+<p align="center">
+    <apan align="center">
+      <img alt="desktop" src="src/assets/desktop.gif" height="80%" width="64%">
+    </apan>
+</p>
 
-Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma Jornada Seletiva de altíssimo nível, mas o seu cadastro se destacou e não temos dúvidas de que você pode ser a pessoa certa para compor o nosso time.<br><br>
-Abaixo, você encontrará todos as informações necessárias para realizar a sua Etapa de Task.<br>
+## 💻 Sobre o projeto
 
-## Visão Geral - O que é esperado?
-Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em desenvolvimento WEB! <br>
-É esperado que você desenvolva uma página WEB para a exibição de uma lista de Pokémons e que seja possível selecionar um (1) para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br><br>
-Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado(a) para a confecção da página.<br>
+Desenvolvi uma aplicação web utilizando Angular para explorar os dados fornecidos pela PokeAPI. A aplicação apresenta os atributos estatísticos de um Pokémon de maneira semelhante a um card, proporcionando uma experiência visual envolvente. Este projeto foi concebido como parte do desafio de estágio em Desenvolvimento na AEVO.
 
-Caso precise consultar algum material de apoio, recomendamos:<br>
-Para o front: https://www.youtube.com/@loianegroner <br>
-
-## Requisitos
-- Explorar a Documentação da API (https://pokeapi.co/docs/v2), para detalhes de utilização; 
-
-- Elaborar uma página para consultar e exibir as informações(lista de pokemons) da requisição da API na página;
-
-- Adicionar um input na página para permitir buscas;
-
-- Selecionar um dos pokemons listados para ver informações detalhadas(Informações detalhadas vem de outra requisicão na API);
-
-- Realizar a soma de todos status(Atributo base_stats que fica dentro de stats)  do pokemon selecionado e exibir esse valor;<br>
-
-Exemplo: uma chamada da API para trazer 151 pokemons 
-https://pokeapi.co/api/v2/pokemon/?limit=151
-
-Exemplo: uma chamada da API para trazer mais informações do pokemon 4 - Charmander
-https://pokeapi.co/api/v2/pokemon/4/
+## 💻 📱Web e Mobile
+<p align="center">
+    <apan align="center">
+      <img alt="desktop2" src="src/assets/desktop2.gif" height="80%" width="64%">
+    </apan>
+        <span align="center">
+      <img alt="mobile" src="src/assets/mobile.gif" height="10%" width="20%">
+    </span>
+</p>
 
 
-*Bonus/Extra*
-- Selecionar dois pokemons e exibir qual dos dois tem a soma de status(Atributo base_stats que fica dentro de stats)  maior;<br>
+## ⚙️ Funcionalidades
 
-## O que será avaliado?
-- Como executa operações que envolvem array/lista;
-- Forma que as requisições são feitas;
-- Estrutura do projeto;
-- Noções basicas de Desenvolvimento Web(Html, css...); 
+### Explorar a Documentação da API
 
-### Observações importantes:
-Nenhum framework é exigido para a confecção da página!<br>
+- [Documentação da API](https://pokeapi.co/docs/v2):  Explore a documentação para detalhes de utilização.
 
-- Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
-- Será considerado um diferencial um layout criativo e com uma boa usabilidade.<br>
-- Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
-- Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
+### Campo de Busca e Exibir as informações(lista de pokemons) da requisição da API
+  - A página possui um campo de busca que permite encontrar Pokémon pelo nome ou pelo ID. Quando o campo de busca é deixado em branco e o botão de busca é clicado, a lista de Pokémon anterior é exibida novamente.
 
-### Como serei avaliado?
-Você poderá:
-- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 24/04/2024 às 23h59; <br>
-ou  
-- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 24/04/2024 às 23h59. <br>
+### Visualizar informações detalhadas do pokemon
+  - É possível visualizar os detalhes do Pokémon selecionado ao clicar no botão "Visualizar" no canto superior esquerdo do card do Pokémon. Você será redirecionado para a página de detalhes, onde encontrará informações detalhadas sobre o Pokémon selecionado.
 
-Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.pedroni@aevo.com.br!
+### Battle fight 
+  - A zona de batalha permite verificar qual dos dois Pokémon selecionados possui um stat total maior. Para adicionar um Pokémon à zona de batalha, clique duas vezes no card (para desktop) ou pressione/touch no card (para dispositivos móveis). Depois de selecionar os Pokémon, pressione o botão "Fight" e aguarde o resultado. No final, será mostrado o vencedor e seu stat total. Para uma nova batalha, limpe os campos pressionando o botão "Limpar".
 
-O nosso Time de Pessoas e Cultura se encontra também à disposição para quaisquer outras questões que achar relevante. Basta nos contatar no e-mail: rh@aevo.com.br!
 
-Estes canais de comunicação estarão sempre abertos para você, não hesite em nos contatar caso tenha dúvidas.
+## 🧪 Tecnologias
 
-Boa sorte! 🧡 ![alt text](https://static.wikia.nocookie.net/pokemongo/images/a/af/Sticker_Funwari_Bulbasaur_bye.png/revision/latest?cb=20200825201636)
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Framework Angular](https://github.com/angular/angular-cli)
+- [Typescript](https://www.typescriptlang.org/docs/)
+
+
+## 🚀 Como executar
+
+Execute o comanda baixo para um servidor de desenvolvimento. Depois navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
+
+```bash
+# Clone do repositório
+git https://github.com/erikbernard/challenge-AEVO.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+cd challenge-AEVO
+
+# Instale as dependências via npm
+npm install
+
+# Run na aplicação
+ng serve
+
+# ou
+npm run serve
+
+```
+
+
+
+## 🦸 Autor
+Erik Bernardo
+- [GitHub](https://github.com/erikbernard)
+- [Email](mailto:erikbrsilva@gmail.com)
