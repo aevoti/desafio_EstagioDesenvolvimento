@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
     SidebarComponent,
   ],
   imports: [

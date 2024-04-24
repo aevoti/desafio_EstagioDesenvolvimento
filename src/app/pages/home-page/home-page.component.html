@@ -1,0 +1,36 @@
+<main class="home__container">
+  <h2>Pokemons</h2>
+  <p>Procure um Pokémon pelo nome ou usando seu
+    Número nacional da Pokédex.</p>
+  <div class="search__container">
+
+    <fieldset class="input-container">
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.5 18.375L14.5833 15.3125M14.1667 8.75C14.1667 12.1327 11.555 14.875 8.33333 14.875C5.11168 14.875 2.5 12.1327 2.5 8.75C2.5 5.36726 5.11168 2.625 8.33333 2.625C11.555 2.625 14.1667 5.36726 14.1667 8.75Z"
+          stroke="" stroke-width="2" stroke-linecap="round" />
+      </svg>
+
+      <input [(ngModel)]="inputSearch" placeholder="Busque aqui" type="search" name="search" id="search" aria-label="Search">
+    </fieldset>
+    <button (click)="onSearch()" type="submit">Buscar</button>
+
+  </div>
+  <section>
+    <app-status-battle
+    [pokemonBattleList]="battleList"
+    (onBattleListClear)="onBattleClear($event)"
+    ></app-status-battle>
+  </section>
+
+  <section class="cards">
+    <ng-container *ngFor="let pokemon of filteredPokemons">
+      <app-card
+      (click)="navegateToDetails(pokemon.id)"
+      [pokemon]="pokemon"
+      (onItemSelected)="onPokemonSelected($event)"
+      ></app-card>
+    </ng-container>
+  </section>
+</main>
+<app-pagination (onChangeOffset)="onPokemonsPagination($event)"></app-pagination>
