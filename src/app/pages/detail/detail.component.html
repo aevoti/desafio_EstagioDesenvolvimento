@@ -9,7 +9,7 @@
       Volta</a>
     <h1>\ Detalhes</h1>
   </div>
-  <app-card [pokemon]="pokemon" />
+  <app-card [ngClass]="id ? 'card__hidden': ''" [pokemon]="pokemon" />
   <div class="card__container">
     <div class="infor__container">
       <h1>Experiência Base: {{pokemon.baseExperience}}</h1>
