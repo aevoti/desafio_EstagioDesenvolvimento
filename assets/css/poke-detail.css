@@ -1,0 +1,78 @@
+.card img {
+    display: block;
+    width: 11.25rem;
+    max-height: 12.5rem;
+    position: relative;
+    margin: 1.25rem auto;
+}
+
+.card .close {
+    padding: 0.625rem;
+}
+
+.hp {
+    width: 5rem;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 1.875rem;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.poke-name {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card {
+    padding: 0.7rem;
+    border-radius: 0.625rem;
+}
+
+.card .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.25rem 0 2.5rem 0;
+}
+
+.card .types .type {
+    color: #fff;
+    filter: brightness(1.1);
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    list-style: none;
+}
+
+.statsList {
+    padding: inherit;
+}
+
+.statsSum {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.statsSum p {
+    color: #404060;
+}
+
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats p {
+    color: #404060;
+}
+
