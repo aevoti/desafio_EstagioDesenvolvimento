@@ -1,64 +1,50 @@
-# Desafio Final: Estágio em Desenvolvimento na AEVO
+# Documentação do Código
 
-Olá candidato(a),![alt text](https://static.wikia.nocookie.net/pokemongo/images/c/cd/Sticker_Funwari_Charmander.png/revision/latest?cb=20200817175607)
+## Descrição Geral
+Este código é um aplicativo web que consome a API dos Pokémons para criar uma lista dinâmica de Pokémons capturados. Ele oferece uma barra de pesquisa para facilitar a localização de Pokémons específicos e, ao clicar em um card de Pokémon, os usuários são direcionados para uma página com informações mais detalhadas sobre o Pokémon selecionado. Além disso, apresenta uma forma de comparar dois Pokémons e fazer a medição de suas forças com base em seus status totais.
 
-Primeiramente, parabéns por ter chegado até aqui! Essa tem sido uma Jornada Seletiva de altíssimo nível, mas o seu cadastro se destacou e não temos dúvidas de que você pode ser a pessoa certa para compor o nosso time.<br><br>
-Abaixo, você encontrará todos as informações necessárias para realizar a sua Etapa de Task.<br>
+## Funcionalidades Principais
+- Consulta à API dos Pokémons para obter dados sobre os Pokémons.
+- Criação dinâmica de uma lista de Pokémons capturados.
+- Implementação de uma barra de pesquisa para filtrar os Pokémons na lista.
+- Exibição de informações detalhadas de cada Pokémon em uma página separada.
 
-## Visão Geral - O que é esperado?
-Essa etapa servirá para que você possa mostrar todos os seus conhecimentos em desenvolvimento WEB! <br>
-É esperado que você desenvolva uma página WEB para a exibição de uma lista de Pokémons e que seja possível selecionar um (1) para ver mais detalhes, utilizando uma API aberta para a consulta das informações. <br><br>
-Pode ficar à vontade para usar as técnicas, ferramentas e frameworks que você conheça e esteja familiarizado(a) para a confecção da página.<br>
+## Funções e Eventos
 
-Caso precise consultar algum material de apoio, recomendamos:<br>
-Para o front: https://www.youtube.com/@loianegroner <br>
+1. **Função `buscaInfo(id)`**
+   - Realiza uma busca por informações de um Pokémon na API, utilizando o ID fornecido.
+   - Se o Pokémon já estiver armazenado no armazenamento local (localStorage), ele é retornado diretamente.
+   - Caso contrário, é feita uma requisição à API para obter as informações do Pokémon, que são então armazenadas no localStorage antes de serem retornadas.
 
-## Requisitos
-- Explorar a Documentação da API (https://pokeapi.co/docs/v2), para detalhes de utilização; 
+2. **Função `carregaNomes()`**
+   - Carrega os nomes dos Pokémons da API.
+   - Se os nomes já estiverem armazenados no armazenamento local (localStorage), eles são retornados diretamente.
+   - Caso contrário, é feita uma requisição à API para obter os nomes, que são então armazenados no localStorage antes de serem retornados.
 
-- Elaborar uma página para consultar e exibir as informações(lista de pokemons) da requisição da API na página;
+3. **Função `compararPokemon(pokemon1, pokemon2)`**
+   - Recebe dois objetos Pokémon e compara suas estatísticas.
+   - Dependendo das estatísticas, uma mensagem é exibida utilizando a biblioteca `Swal` (SweetAlert) para indicar qual Pokémon é mais forte.
 
-- Adicionar um input na página para permitir buscas;
+4. **Função `ComparaRecebe1()`**
+   - Permite ao usuário comparar um Pokémon selecionado com outro Pokémon escolhido em um menu suspenso.
+   - Carrega a lista de nomes de Pokémons e os normaliza.
+   - Obtém o ID do Pokémon atualmente selecionado na página.
+   - Abre um modal solicitando ao usuário que selecione um Pokémon para comparar com o Pokémon atual.
+   - Quando o usuário seleciona um Pokémon, busca as informações do Pokémon selecionado para comparação e chama a função `compararPokemon()` para exibir o resultado da comparação.
 
-- Selecionar um dos pokemons listados para ver informações detalhadas(Informações detalhadas vem de outra requisicão na API);
+5. **Função `comparaRecebe2()`**
+   - Permite ao usuário selecionar dois Pokémons para comparar suas estatísticas.
+   - Carrega a lista de nomes de Pokémons e os normaliza.
+   - Abre um modal solicitando ao usuário que selecione o primeiro Pokémon.
+   - Após a seleção do primeiro Pokémon, abre outro modal solicitando ao usuário que selecione o segundo Pokémon.
+   - Quando ambos os Pokémons são selecionados, busca as informações de ambos os Pokémons e chama a função `compararPokemon()` para exibir o resultado da comparação.
 
-- Realizar a soma de todos status(Atributo base_stats que fica dentro de stats)  do pokemon selecionado e exibir esse valor;<br>
+6. **Função `carregaTabela(inicio, final)`**
+   - Carrega uma tabela de Pokémons na página.
+   - Chama a função `buscaInfo` para obter informações sobre os Pokémons dentro de um intervalo especificado.
+   - Utiliza um IntersectionObserver para carregar mais Pokémons quando o último Pokémon na tabela estiver visível na viewport.
 
-Exemplo: uma chamada da API para trazer 151 pokemons 
-https://pokeapi.co/api/v2/pokemon/?limit=151
-
-Exemplo: uma chamada da API para trazer mais informações do pokemon 4 - Charmander
-https://pokeapi.co/api/v2/pokemon/4/
-
-
-*Bonus/Extra*
-- Selecionar dois pokemons e exibir qual dos dois tem a soma de status(Atributo base_stats que fica dentro de stats)  maior;<br>
-
-## O que será avaliado?
-- Como executa operações que envolvem array/lista;
-- Forma que as requisições são feitas;
-- Estrutura do projeto;
-- Noções basicas de Desenvolvimento Web(Html, css...); 
-
-### Observações importantes:
-Nenhum framework é exigido para a confecção da página!<br>
-
-- Será considerado um diferencial a estruturação de um projeto Angular para a confecção da página.<br>
-- Será considerado um diferencial um layout criativo e com uma boa usabilidade.<br>
-- Será considerado um diferencial a utilização de back-end para persistencia de dados em qualquer modelo de persistência.<br>
-- Será considerado ponto positivo a utilização de documentação para o mini projeto.<br>
-
-### Como serei avaliado?
-Você poderá:
-- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 24/04/2024 às 23h59; <br>
-ou  
-- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 24/04/2024 às 23h59. <br>
-
-Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.pedroni@aevo.com.br!
-
-O nosso Time de Pessoas e Cultura se encontra também à disposição para quaisquer outras questões que achar relevante. Basta nos contatar no e-mail: rh@aevo.com.br!
-
-Estes canais de comunicação estarão sempre abertos para você, não hesite em nos contatar caso tenha dúvidas.
-
-Boa sorte! 🧡 ![alt text](https://static.wikia.nocookie.net/pokemongo/images/a/af/Sticker_Funwari_Bulbasaur_bye.png/revision/latest?cb=20200825201636)
-
+7. **Função `geraCard(pokemon)`**
+   - Gera um card para um Pokémon e o adiciona à tabela na página.
+   - O card contém o nome, o número (ID) e a imagem do Pokémon.
+   - Estilizado com o tipo de Pokémon como fundo, utilizando as cores definidas no objeto `colors`.

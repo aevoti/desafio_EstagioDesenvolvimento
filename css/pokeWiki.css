@@ -1,0 +1,129 @@
+body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+}
+
+.setaPoke {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+#pokemon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+#infosPokemon {
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+#imgName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#imgPokemon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 300px;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+}
+
+#nomePoke {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#textBox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 70px;
+    font-size: 25px;
+}
+
+#medidasPoke {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#medidasPoke h1 {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#tiposBox {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#tiposPoke {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+#habilidadesPoke {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tipos {
+    width: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+}
+#status{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+}

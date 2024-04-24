@@ -1,0 +1,16 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Projeto realizado para o desafio da AEVO",
+  "main": "./js/preencheTabela.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kaio henrique",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "php": "^1.0.2",
+    "sweetalert2": "^11.10.8"
+  }
+}
