@@ -1,0 +1,9 @@
+
+<div class="pagination__container">
+  <button (click)="previousPage()" [disabled]="offset === 0">Previous</button>
+  <ng-container *ngFor="let pageNumber of getPageNumbers()">
+    <button (click)="setPage(pageNumber)">{{pageNumber}}</button>
+  </ng-container>
+  <button (click)="nextPage()" [disabled]="offset + limit >= totalItems">Next</button>
+</div>
+
