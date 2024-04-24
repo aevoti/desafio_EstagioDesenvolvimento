@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --primary-900: #142b48;
+  --primary-800: #1c3c65;
+  --primary-700: #285691;
+  --primary-600: #326AB2;
+  --primary-500: #00adb4;
+  --primary-400: #33bdc3;
+  --primary-300: #66ced2;
+  --primary-200: #99dee1;
+  --primary-200: #b5d7ff;
+  --primary-100: #CCEFF0;
+
+  --secondary-900: #33150a;
+  --secondary-800: #662914;
+  --secondary-700: #983e1e;
+  --secondary-600: #cb5228;
+  --secondary-500: #fe6732;
+  --secondary-400: #fe855b;
+  --secondary-300: #fea484;
+  --secondary-200: #ffc2ad;
+  --secondary-100: #ffe1d6;
+
+  --tertiary-900: #33270d;
+  --tertiary-800: #664f19;
+  --tertiary-700: #997626;
+  --tertiary-600: #cc9e32;
+  --tertiary-500: #ffc53f;
+  --tertiary-400: #ffd165;
+  --tertiary-300: #ffdc8c;
+  --tertiary-200: #ffe8b2;
+  --tertiary-100: #fff3d9;
+
+  --gray-900: #263238;
+  --gray-800: #424242;
+  --gray-700: #616161;
+  --gray-600: #546e7a;
+  --gray-500: #757575;
+  --gray-400: #78909c;
+  --gray-300: #90a4ae;
+  --gray-200: #E0E0E0;
+  --gray-100: #EEEEEE;
+  --gray-50: #FAFAFA;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  --error: #d32f2f;
+  --error-: #ffe5e8;
+
+  --success: #00ADB4;
+  --success-: #dcefdd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 120%;
+  font-weight: 600;
+  font-family: var(--font-lato);
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 40px;
+}
+h5 {
+  font-size: 32px;
+}
+h6 {
+  font-size: 24px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-lato);
+}
+
