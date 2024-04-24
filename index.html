@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Font Robotto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/detail-modal.css">
+    <link rel="stylesheet" href="/assets/css/poke-detail.css">
+
+</head>
+<body>
+    <!-- Início da seção de conteúdo -->
+    <section class="content">
+
+        <!-- Campo de voltar  -->
+        <div class="backPoke">
+            <button class="back-button">
+                <img src="assets/img/icon_back.svg">
+            </button>
+        </div>
+
+        <!-- Titulo -->
+        <h1>Pokédex by Helon de França</h1>
+
+        <!-- Campo de pesquisa de Pokémon -->
+        <div class="searchPoke" title="Pesquise com id ou nome do pokémon.">
+            <button class="search-button">
+                <img src="assets/img/icon_lupa.svg">
+            </button>
+            <input type="text" class="search-input" id="pokemonName" placeholder="Pesquisar Pokémon">  
+        </div>
+
+        <!-- Campo de Camparara pokemos  -->
+        <div class="comparePoke"  title="Crie batalhas entre pokémons, que vença o melhor.">
+            <button id="comparePoke-button">
+                Batalha de Pokemons
+            </button>
+        </div>
+
+
+        <!-- Lista de Pokémon -->
+        <ol id ="PokemonList" class="pokemons"></ol>
+
+        <!-- Pokémon não encontrado -->
+        <div class="notfoundPoke">
+        </div>
+        
+        <!-- Paginação -->
+        <div class="pagination">
+            <button id="loadmore" type="button">Mostrar mais</button>
+        </div>
+
+        <!-- Modal de detalhes do Pokémon -->
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+                <div id="pokemonDetails"></div>
+            </div>
+        </div>
+
+        <!-- Modal de batalha de Pokémon -->
+        <div id="battleModal" class="modal">
+            <!-- Conteúdo do modal -->
+            <div class="modal-battles">
+                <!-- Botão de fechar -->
+                <span class="close">&times;</span>
+                <div class="textBattles">
+                    <h2> Compare os atributos dos Pokémon e determine quem é o mais forte.</h2>
+                    <h4>  As comparações são baseadas na soma dos atributos, desconsiderando seus tipos elementares.</h4>
+                </div>
+                <div class="cards-container">
+                    <!-- Cards de Pokemon -->
+                    <div class="cardleft">
+                        <input type="text" placeholder="Pokémon número um." id="onePokemon" value="">
+                        <div class="cardleftPoke">
+                        </div>
+                    </div>
+            
+                    <div>
+                        <span class="vs-span">Vs</span>
+                    </div>
+            
+                    <div class="cardRight">
+                        <input type="text"  title="Pressione enter para buscar pokemon." placeholder="Pokémon número dois." id="twoPokemon" value="">
+                        <div class="cardRightPoke">    
+                        </div>
+                    </div>
+                </div>
+                <div class="comparePoke">
+                    <button id="clearBattle">
+                      Limpar Batalha
+                    </button>
+                </div>
+                <div class="comparePoke">
+                    <button id="comparePokeBattle">
+                        Batalhar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fim da seção de conteúdo -->
+
+    <!-- Carregando Scripts -->
+    <script src="/assets/js/pokemon-model.js" defer></script>
+    <script src="/assets/js/poke-render.js" defer></script>
+    <script src="/assets/js/poke-api.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
