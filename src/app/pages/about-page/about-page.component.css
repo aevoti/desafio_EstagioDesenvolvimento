@@ -1,0 +1,56 @@
+.about__container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  height: 100vh;
+}
+
+.about__backbutton {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-800);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about__backbutton a {
+  text-decoration: none;
+  color: var(--primary-800);
+}
+
+.about__backbutton a>svg {
+  fill: var(--primary-800);
+  rotate: 90deg;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-between;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+}
+
+.card__container:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card__container a img{
+  width:10rem;
+}
+.card__container a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: var(--font-oswald);
+  color: var(--primary-800);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
