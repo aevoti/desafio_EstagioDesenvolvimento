@@ -1,0 +1,149 @@
+.card__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  min-width: 14.25rem;
+  height: 16rem;
+  justify-content: space-between;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+}
+
+h2 {
+  color: var(--primary-800);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.card__container:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card__container:hover::before {
+  content: "Clique duas vezes para adicionar a área de batalha";
+  position: absolute;
+  background-color: var(--primary-200);
+  color: var(--primary-800);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  z-index: 9999;
+  transform: translate(60%, 0%);
+  margin-top: -1rem;
+}
+
+.card__header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card__header span {
+  padding: 1rem;
+}
+
+.card__types {
+  list-style: none;
+  gap: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__types li {
+  list-style: none;
+  padding: .4rem 0.8rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.card__types li:hover {
+  filter: brightness(1.1);
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card__footer img {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.normal {
+  background-color: #a6a877;
+}
+
+.grass {
+  background-color: #77c850;
+}
+
+.fire {
+  background-color: #ee7f30;
+}
+
+.water {
+  background-color: #678fee;
+}
+
+.electric {
+  background-color: #f7cf2e;
+}
+
+.ice {
+  background-color: #98d5d7;
+}
+
+.ground {
+  background-color: #dfbf69;
+}
+
+.flying {
+  background-color: #a98ff0;
+}
+
+.poison {
+  background-color: #a040a0;
+}
+
+.fighting {
+  background-color: #bf3029;
+}
+
+.psychic {
+  background-color: #f65687;
+}
+
+.dark {
+  background-color: #725847;
+}
+
+.rock {
+  background-color: #b8a137;
+}
+
+.bug {
+  background-color: #a8b720;
+}
+
+.ghost {
+  background-color: #6e5896;
+}
+
+.steel {
+  background-color: #b9b7cf;
+}
+
+.dragon {
+  background-color: #6f38f6;
+}
+
+.fairy {
+  background-color: #f9aec7;
+}

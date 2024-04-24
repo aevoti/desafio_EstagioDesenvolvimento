@@ -1,0 +1,14 @@
+<div class="card__container" (dblclick)="selectPokemon()">
+  <div class="card__header" *ngIf="pokemon">
+    <h2>{{pokemon.name | titlecase}}</h2>
+    <span>#{{pokemon.id}}</span>
+  </div>
+  <div class="card__footer" *ngIf="pokemon">
+    <ul class="card__types">
+      <ng-container *ngFor="let i of pokemon.types">
+        <li [class]="i.type.name">{{i.type.name | uppercase}}</li>
+      </ng-container>
+    </ul>
+    <img [src]="pokemon.gif" [alt]="pokemon.name">
+  </div>
+</div>
