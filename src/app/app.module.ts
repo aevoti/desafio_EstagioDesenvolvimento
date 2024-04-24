@@ -7,11 +7,13 @@ import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { DetailComponent } from './pages/detail/detail.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
+    DetailComponent,
     SidebarComponent,
   ],
   imports: [

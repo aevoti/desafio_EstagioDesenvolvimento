@@ -1,0 +1,31 @@
+<main class="datail__container"  *ngIf="pokemon">
+  <div class="datail__backbutton">
+    <a routerLink="/home" title="Inicio">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.46936 6.969C2.53903 6.89915 2.6218 6.84374 2.71291 6.80593C2.80403 6.76812 2.90171 6.74866 3.00036 6.74866C3.09902 6.74866 3.1967 6.76812 3.28781 6.80593C3.37893 6.84374 3.4617 6.89915 3.53136 6.969L12.0004 15.4395L20.4694 6.969C20.5391 6.89927 20.6219 6.84395 20.713 6.80621C20.8041 6.76847 20.9017 6.74905 21.0004 6.74905C21.099 6.74905 21.1966 6.76847 21.2877 6.80621C21.3788 6.84395 21.4616 6.89927 21.5314 6.969C21.6011 7.03873 21.6564 7.12151 21.6941 7.21262C21.7319 7.30373 21.7513 7.40138 21.7513 7.5C21.7513 7.59861 21.7319 7.69626 21.6941 7.78737C21.6564 7.87848 21.6011 7.96127 21.5314 8.031L12.5314 17.031C12.4617 17.1008 12.3789 17.1563 12.2878 17.1941C12.1967 17.2319 12.099 17.2513 12.0004 17.2513C11.9017 17.2513 11.804 17.2319 11.7129 17.1941C11.6218 17.1563 11.539 17.1008 11.4694 17.031L2.46936 8.031C2.39952 7.96133 2.34411 7.87857 2.3063 7.78745C2.26849 7.69633 2.24902 7.59865 2.24902 7.5C2.24902 7.40135 2.26849 7.30366 2.3063 7.21255C2.34411 7.12143 2.39952 7.03867 2.46936 6.969Z"
+          fill="" />
+      </svg>
+      Volta</a>
+    <h1>\ Detalhes</h1>
+  </div>
+  <app-card [pokemon]="pokemon" />
+  <div class="card__container">
+    <div class="infor__container">
+      <h1>Experiência Base: {{pokemon.baseExperience}}</h1>
+      <h1>Total Stats: {{pokemon.stat}}</h1>
+    </div>
+  </div>
+  <div class="card__container">
+    <ng-container *ngFor="let i of pokemon.stats">
+      <div class="statistic__container">
+        <span class="{{i.name}}">
+          {{i.name | titlecase}}
+        </span>
+        <span>
+          {{i.base+" pt"}}
+        </span>
+      </div>
+    </ng-container>
+  </div>
+</main>

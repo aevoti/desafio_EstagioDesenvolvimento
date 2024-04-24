@@ -1,0 +1,148 @@
+.datail__container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
+
+.datail__backbutton {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-800);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.datail__backbutton a {
+  text-decoration: none;
+  color: var(--primary-800);
+}
+
+.datail__backbutton a>svg {
+  fill: var(--primary-800);
+  rotate: 90deg;
+}
+
+::ng-deep app-card .card__container:hover::before {
+  display: none !important;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-between;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+}
+
+.card__container:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.statistic__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistic__container span {
+  font-family: var(--font-oswald);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.infor__container{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  color: var(--primary-800);
+}
+
+.infor__container h1{
+  font-family: var(--font-oswald);
+
+}
+
+.hp {
+  background-color: #ff2319c2;;
+  width: 10rem;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+
+}
+
+.hp:hover {
+  filter: brightness(.9);
+}
+
+.attack {
+  background-color: #bf3029c2;
+  width: 10rem;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+
+}
+
+.attack:hover {
+  filter: brightness(.9);
+}
+
+.defense {
+  background-color: #ee7f30c2;
+  width: 10rem;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+
+}
+
+.defense:hover {
+  filter: brightness(.9);
+}
+
+.special-attack {
+  background-color: #004bffc2;
+  width: 10rem;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+
+}
+
+.special-attack:hover {
+  filter: brightness(.9);
+}
+
+.special-defense {
+  background-color: #77c850c2;
+  width: 10rem;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+
+}
+
+.special-defense:hover {
+  filter: brightness(.9);
+}
+
+.speed {
+  background-color: #a040a0c2;
+  width: 10rem;
+  padding: .8rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.speed:hover {
+  filter: brightness(.9);
+}
