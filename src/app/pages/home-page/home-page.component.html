@@ -26,7 +26,7 @@
   <section class="cards">
     <ng-container *ngFor="let pokemon of filteredPokemons">
       <app-card
-      (click)="navegateToDetails(pokemon.id)"
+      (onViewdetail)="navegateToDetails(pokemon.id)"
       [pokemon]="pokemon"
       (onItemSelected)="onPokemonSelected($event)"
       ></app-card>

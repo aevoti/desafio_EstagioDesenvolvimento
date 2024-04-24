@@ -22,8 +22,14 @@ export class CardComponent {
 
   @Input() pokemon: Pokemon = this.init;
   @Output() onItemSelected = new EventEmitter<{ name: string, stat: number, gif: string }>();
+  @Output() onViewdetail = new EventEmitter();
   selectPokemon(): void {
     const { stat, gif, name } = this.pokemon;
     this.onItemSelected.emit({ name, stat, gif });
   }
+
+  viewDatail(): void {
+    this.onViewdetail.emit();
+  }
+
 }

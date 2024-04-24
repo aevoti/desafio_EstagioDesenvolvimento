@@ -31,7 +31,8 @@ h2 {
   border-radius: 4px;
   font-size: 1rem;
   z-index: 9999;
-  transform: translate(60%, 0%);
+  border: none;
+  transform: translate(16%, -80%);
   margin-top: -1rem;
 }
 
@@ -42,8 +43,16 @@ h2 {
   flex-direction: row;
 }
 
-.card__header span {
-  padding: 1rem;
+.card__header button {
+  padding: 0.2rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: var(--primary-800);
+}
+.card__header button:hover{
+  outline: 1px solid var(--primary-800);
 }
 
 .card__types {
