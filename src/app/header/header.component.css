@@ -1,0 +1,22 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+button {
+  margin-left: 15px
+}
+
+mat-toolbar {
+  background-color: #ff0000;
+  background-image: linear-gradient(90deg, #ff0000 87%, #000000 100%);
+}
+
+.example-header-image{
+  background-image: url('/assets/PokeballcardCORRETO.png');
+  background-size: cover;
+}
+
+button:hover {
+  background-color: #ff0000;
+  color: white;
+}
