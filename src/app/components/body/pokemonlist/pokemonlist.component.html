@@ -1,0 +1,4 @@
+<div class="pokemon-list">
+<app-pokemon-search (searchEmmiter)="getSearch($event)"></app-pokemon-search>
+<app-pokemoncard *ngFor="let pokemons of listPokemons" [pokemon]="pokemons" [routepoke]="valordarota"></app-pokemoncard>
+</div>

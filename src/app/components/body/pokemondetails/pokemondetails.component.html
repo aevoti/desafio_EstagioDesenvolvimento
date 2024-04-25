@@ -1,0 +1,37 @@
+<div class="pokemon-details-container" *ngIf="pokemonDetails">
+  <button routerLink="" class="back-button">Voltar</button>
+  <button (click)="compareWithAnotherPokemon()" class="back-button">Comparar com outro pokémon</button>
+  <div class="pokemon-details">
+    <h2>{{ pokemonDetails.name }}</h2>
+    <div class="pokemon-image">
+      <img [src]="getPokemonImageUrl(pokemonDetails.id)" alt="Image of {{ pokemonDetails.name }}">
+    </div>
+    <div class="pokemon-stats">
+      <h3>Atributos do Pokémon</h3>       
+      <ul>
+        <li><strong>HP:</strong> {{ getPokemonStat('hp') }}</li>
+        <li><strong>Ataque:</strong> {{ getPokemonStat('attack') }}</li>
+        <li><strong>Defesa:</strong> {{ getPokemonStat('defense') }}</li>
+        <li><strong>Ataque Especial:</strong> {{ getPokemonStat('special-attack') }}</li>
+        <li><strong>Defesa Especial:</strong> {{ getPokemonStat('special-defense') }}</li>
+        <li><strong>Velocidade:</strong> {{ getPokemonStat('speed') }}</li>
+        <li style="color:red;"><strong>Soma dos atributos base:</strong> {{ calculateTotalBaseStats(pokemonDetails.stats) }}</li>       
+      </ul>
+    </div>
+      
+    <div class="pokemon-details-info">
+      <p><strong>Experiência Base:</strong> {{ pokemonDetails.base_experience }}</p>
+      <p><strong>Altura:</strong> {{ pokemonDetails.height *10 }} centímetros</p>
+
+      <h3>Habilidades:</h3>
+      <ul>
+        <li *ngFor="let ability of pokemonDetails.abilities">{{ ability.ability.name }}</li>
+      </ul>
+
+      <h3>Alguns Movimentos:</h3>
+      <ul>
+        <li *ngFor="let move of pokemonDetails.moves.slice(0, 5)">{{ move.move.name }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<div class="pokemon-stats-comparison" *ngIf="firstPokemon && secondPokemon">
+  <div class="pokemon-details" >
+    <h2>{{ firstPokemon.name }}</h2>
+    <h2>Nº{{ firstPokemon.id }}</h2>
+    <div class="pokemon-image">
+      <img
+        [src]="getPokemonImageUrl(firstPokemon.id)"
+        alt="Image of {{ firstPokemon.name }}"
+      />
+    </div>
+    <h3>Atributos do Pokémon</h3>
+    <ul>
+      <li><strong>HP:</strong> {{ getFirstPokemonStat("hp") }}</li>
+      <li><strong>Ataque:</strong> {{ getFirstPokemonStat("attack") }}</li>
+      <li><strong>Defesa:</strong> {{ getFirstPokemonStat("defense") }}</li>
+      <li>
+        <strong>Ataque Especial:</strong>
+        {{ getFirstPokemonStat("special-attack") }}
+      </li>
+      <li>
+        <strong>Defesa Especial:</strong>
+        {{ getFirstPokemonStat("special-defense") }}
+      </li>
+      <li><strong>Velocidade:</strong> {{ getFirstPokemonStat("speed") }}</li>
+      <li style="color: red">
+        <strong>Soma dos atributos base:</strong>
+        {{ calculateFirstTotalBaseStats(firstPokemon.stats) }}
+      </li>
+    </ul>
+  </div>
+  <div class="vs-text">VS</div>
+
+  <div class="pokemon-details">
+    <h2>{{ secondPokemon.name }}</h2>
+    <h2>Nº {{ secondPokemon.id }}</h2>
+    <div class="pokemon-image">
+      <img
+        [src]="getPokemonImageUrl(secondPokemon.id)"
+        alt="Image of {{ secondPokemon.name }}"
+      />
+    </div>
+    <h3>Atributos do Pokémon</h3>
+    <ul>
+      <li><strong>HP:</strong> {{ getSecondPokemonStat("hp") }}</li>
+      <li><strong>Ataque:</strong> {{ getSecondPokemonStat("attack") }}</li>
+      <li><strong>Defesa:</strong> {{ getSecondPokemonStat("defense") }}</li>
+      <li>
+        <strong>Ataque Especial:</strong>
+        {{ getSecondPokemonStat("special-attack") }}
+      </li>
+      <li>
+        <strong>Defesa Especial:</strong>
+        {{ getSecondPokemonStat("special-defense") }}
+      </li>
+      <li><strong>Velocidade:</strong> {{ getSecondPokemonStat("speed") }}</li>
+      <li style="color: red">
+        <strong>Soma dos atributos base:</strong>
+        {{ calculateSecondTotalBaseStats(secondPokemon.stats) }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="winner">
+    {{ determineWinner() }}
+    <div>
+      <button routerLink="/" class="back-button">Voltar para o início</button>
+    </div>
+  </div>
+</div>
