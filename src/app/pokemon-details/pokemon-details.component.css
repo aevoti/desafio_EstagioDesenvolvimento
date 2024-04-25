@@ -1,0 +1,22 @@
+
+:host{
+  display: flex;
+}
+
+.example-header-image {
+  background-image: url('/assets/PokeballcardCORRETO.png');
+  background-size: cover;
+}
+
+.pokemonStatus{
+  display: flex;
+}
+
+.h3 {
+  margin-left: 4px;
+}
+
+.tipoPokemon{
+  display: flex;
+}
+
