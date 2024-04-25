@@ -1,0 +1,15 @@
+<div class="space-card-pokemon" [routerLink]="[routepoke, pokemon.number]">
+  <div class="id_card-pokemon">{{pokemon.number}}</div>
+  <div class="img_card-pokemon">
+    <img
+    [src]="pokemon.number <= 9 ? 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/00' + pokemon.number + '.png' : (pokemon.number <= 99 ? 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/0' + pokemon.number + '.png' : 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/' + pokemon.number + '.png')"
+    alt="Image of pokemon"
+    />
+  </div>
+
+  <div class="name_card-pokemon">{{pokemon.name}}</div>
+
+  <div class="types_card-pokemon">
+    <div class="type_card-pokemon" *ngFor="let type of pokemon.types" [class]="'type_card-pokemon--'+type.toLowerCase()">{{type}}</div>
+  </div>
+</div>

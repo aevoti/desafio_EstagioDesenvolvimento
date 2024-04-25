@@ -1,0 +1,60 @@
+.pokemon-stats-comparison {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    .pokemon-details {
+      flex: 1;
+      text-align: center;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+      }
+  
+      .pokemon-image {
+        margin-bottom: 1rem;
+  
+        img {
+          width: 150px; /* Ajuste conforme necessário */
+          height: 150px; /* Ajuste conforme necessário */
+          border-radius: 50%;
+          border: 5px solid #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  
+    .vs-text {
+      font-size: 2rem;
+      font-weight: bold;
+      
+    }
+  }
+  
+  // Visual Studio em tamanho grande
+  .vs-large {
+    font-size: 3rem;
+  }
+  
+
+  .winner {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem; /* Ajuste conforme necessário */
+  }

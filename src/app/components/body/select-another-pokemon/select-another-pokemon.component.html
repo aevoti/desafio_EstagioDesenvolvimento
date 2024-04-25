@@ -1,0 +1,7 @@
+<div class="title-container">
+    <h1 class="title">SELECIONE O POKÉMON QUE DESEJA COMPARAR(BATALHAR)</h1>
+</div>
+<div class="pokemon-list">   
+    <app-pokemon-search (searchEmmiter)="getSearch($event)"></app-pokemon-search>
+   <app-pokemoncardsecond *ngFor="let pokemons of listPokemons" [pokemon]="pokemons" [routepoke]="rotacomparapokemon" ></app-pokemoncardsecond>
+</div>
