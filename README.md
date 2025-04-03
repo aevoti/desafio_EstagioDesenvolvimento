@@ -50,9 +50,9 @@ Nenhum framework é exigido para a confecção da página!<br>
 
 ### Como serei avaliado?
 Você poderá:
-- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 24/04/2024 às 23h59; <br>
+- Efetuar um pull request da sua implementação diretamente no Github até a data limite de 13/04/2025 às 23h59; <br>
 ou  
-- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 24/04/2024 às 23h59. <br>
+- Encaminhar para o e-mail carlos.pedroni@aevo.com.br com rh@aevo.com.br em cópia, um arquivo .zip ou link com o código fonte até a data limite de 13/04/2025 às 23h59. <br>
 
 Quaisquer dúvidas técnicas em relação à Task, dificuldades com o repositório ou com a API PokeAPI, não deixe de entrar em contato com o e-mail: carlos.pedroni@aevo.com.br!
 
