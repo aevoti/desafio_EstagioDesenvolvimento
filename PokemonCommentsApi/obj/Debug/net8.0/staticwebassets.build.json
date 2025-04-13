@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GYyUTDoNC5SHwGGdEg/EgjJAwCD79gmsuhRFT2wLPIw=",
+  "Source": "PokemonCommentsApi",
+  "BasePath": "_content/PokemonCommentsApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
