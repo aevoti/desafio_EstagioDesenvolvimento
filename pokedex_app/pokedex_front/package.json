@@ -1,0 +1,40 @@
+{
+  "name": "pokedex",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@nestjs/typeorm": "^11.0.0",
+    "@types/color-thief-node": "^1.0.4",
+    "aos": "^2.3.4",
+    "color-thief-node": "^1.0.4",
+    "colorthief": "^2.6.0",
+    "fast-average-color": "^9.5.0",
+    "pg": "^8.14.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.0",
+    "typeorm": "^0.3.22"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}

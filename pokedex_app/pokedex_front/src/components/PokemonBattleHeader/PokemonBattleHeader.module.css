@@ -1,0 +1,24 @@
+.pokeBattleHeader{
+  display: grid;
+  grid-template-rows: 250px auto;
+  place-items: center;
+  position: relative;
+  z-index: 7;
+}
+
+.pokeBattleHeader img{
+  max-height: 250px;
+}
+
+.pokeBattleHeader a {
+  font-family: "Pixelify Sans", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px  1px 0 #000,
+    1px  1px 0 #000;
+  
+}

@@ -1,0 +1,33 @@
+.pokeBattleSelectWrapper {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.pokeBattleSelect{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button{
+  background-color: #fcdc58;
+  color: #222;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 12px 24px;
+  border: 4px solid #000;
+  box-shadow:
+    4px 4px 0 #000,
+    -4px -4px 0 #000;
+  text-transform: uppercase;
+  font-size: 32px;
+  cursor: pointer;
+  outline: none;
+  cursor: pointer;
+}
