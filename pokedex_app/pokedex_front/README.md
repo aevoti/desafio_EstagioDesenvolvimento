@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# Pokédex React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação moderna de Pokédex construída com React, TypeScript e Vite. Esta aplicação possui uma visualização de lista de Pokémon e um simulador de batalhas.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navegue pelos Pokémon com uma lista dinâmica
+- Simulador de batalhas interativo
+- Cores de fundo dinâmicas baseadas nos tipos de Pokémon
+- Design responsivo para todos os dispositivos
+- Navegação baseada em rotas
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- React Router DOM
+- Context API para gerenciamento de estado
+- Color-Thief para recuperar as cores dominantes das imagens
+- AOS animation para animações suaves
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Estrutura do Projeto
+
+```
+pokedex/
+├── src/
+│   ├── App.tsx          # Componente principal da aplicação
+│   ├── App.css          # Estilos globais
+│   ├── Context.ts       # Contexto e estado da aplicação
+│   └── features/
+│       └── pokemon/
+│           └── pages/
+│               ├── PokemonList.tsx   # Página de listagem de Pokémon
+│               └── PokeBattle.tsx    # Página do simulador de batalhas
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd pokedex
+npm install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Run the development server:
+
+```bash
+npm run dev
+```
+
+3. Open your browser and navigate to `http://localhost:5173`
+
+## Rotas Disponíveis
+
+- `/` - Redireciona para a primeira página de Pokémon
+- `/:name` - Página individual de um Pokémon
+- `/poke-battle` - Simulador de batalhas
+
+## Desenvolvimento
+
+Este projeto utiliza o Vite como ferramenta de build e servidor de desenvolvimento. Os seguintes scripts estão disponíveis:
+
+```bash
+npm run dev      # Iniciar servidor de desenvolvimento
+npm run build    # Gerar build para produção
+npm run preview  # Visualizar build de produção
 ```
