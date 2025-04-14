@@ -1,0 +1,15 @@
+.pokemonTitle{
+  margin: 16px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.pokemonTitle span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.pokemonTitle h2{
+  font-size: 32px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #333;
+  text-shadow: 0 0 4px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50vw max-content;
+  justify-content: center;
+}
+
+.column{
+  grid-column: 1/-1;
+}
+
+.bg{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: background-color .3s;
+}
+
+.pokeBattle{
+  height: 100vh;
+  width: 100%;
+  background-color: aqua;
+  position: relative;
+  z-index: 2;
+}
+
+.pokeBattle::before{
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/poke-battle-bg.png);
+  background-position: center;
+  background-size: contain;
+}
+
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .wrapper {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+

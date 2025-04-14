@@ -1,0 +1,64 @@
+.typeBadge{
+  display: flex;
+  gap: 8px;
+}
+
+.pokemonStats h3{
+  font-size: 42px;
+  margin-bottom: 32px;
+}
+
+.pokemonStats ul{
+  margin-left: 16px;
+  position: relative;
+  max-width: 300px;
+}
+
+
+.pokemonStats ul::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: -14px;
+  
+} 
+
+.pokemonStats li{
+  text-transform: uppercase;
+  background-color: #FDFFFE;
+  color: #656565;
+  padding: 4px 16px;
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, .2);
+  margin-bottom: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.pokemonStats li {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .pokemonStats{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pokemonStats h3{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .pokemonStats li{
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+}
+
+

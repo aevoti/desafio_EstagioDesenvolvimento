@@ -1,0 +1,111 @@
+.pokemonArena{
+  position: absolute;
+  left: 150px;
+  bottom: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  transition: .3s;
+}
+
+.pokemonArena p{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 32px;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.pokemon1 {
+  transition: .3s;
+}
+
+.pokemon1 {
+  transition: .3s;
+}
+
+.inverted {
+  transform: scaleX(-1);
+}
+
+.pokemon1 img, 
+.pokemon2 img{
+  width: 200px;
+}
+
+.pokemonArena.battling .pokemon1 {
+  animation: advance1 0.5s ease forwards;
+}
+
+.pokemonArena.battling .pokemon1 img {
+  animation: shake 0.3s infinite;
+  animation-delay: 0.5s;
+}
+
+.pokemonArena.battling .pokemon2 {
+  animation: advance2 0.5s ease forwards;
+}
+
+.pokemonArena.battling .pokemon2 img {
+  animation: shake 0.3s infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes advance1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(150%); }
+}
+
+@keyframes advance2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-150%); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.winner img {
+  animation: spinVictory 1s ease-in-out 2;
+}
+
+@keyframes spinVictory {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.loser img {
+  animation: loserFade 1s ease forwards;
+  opacity: 0.5;
+}
+
+@keyframes loserFade {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: scale(0.8) rotate(20deg); opacity: 0.4; }
+}
+
+.tie img {
+  animation: tieShake 0.3s ease infinite;
+}
+
+@keyframes tieShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
